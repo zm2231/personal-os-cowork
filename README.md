@@ -26,7 +26,7 @@ PersonalOS is a personal AI assistant that:
 
 ```bash
 # Clone to your Cowork workspace
-git clone https://github.com/your-org/personal-os-cowork.git
+git clone https://github.com/zm2231/personal-os-cowork.git
 
 # Or copy to your skills directory
 cp -r personal-os-cowork ~/.cowork/skills/
