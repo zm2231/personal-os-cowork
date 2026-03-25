@@ -183,51 +183,37 @@ PersonalOS: "I noticed you do [meeting-notes → session-summary → update-prio
 
 ## Scalability
 
-### Multiple Instances
+### Single Instance Architecture
 
-**Yes, you can run multiple PersonalOS instances.** Each instance maintains its own separate state in its `personal-os/` directory. To run multiple instances:
+**PersonalOS runs as a single Cowork skill system.** One PersonalOS installation serves all your needs - no multiple instances required.
 
-```bash
-# Instance 1 (default)
-git clone https://github.com/zm2231/personal-os-cowork.git ~/personal-os-work/
-cp -r ~/personal-os-work ~/.cowork/skills/personal-os-work/
+**How Natural Language Context Switching Works:**
 
-# Instance 2 (personal life)
-git clone https://github.com/zm2231/personal-os-cowork.git ~/personal-os-personal/
-cp -r ~/personal-os-personal ~/.cowork/skills/personal-os-personal/
+PersonalOS uses Cowork's custom instructions and context awareness to understand your intent:
+
+```
+You: "I need to prep for my 2pm meeting with the team"
+PersonalOS: "I'll use your work context - loading team directory, current priorities, and meeting prep workflow."
+
+You: "Remind me to call mom this evening"
+PersonalOS: "Got it - I'll add this to your personal priorities with a gentle reminder."
+
+You: "I'm studying for my AWS exam next week"
+PersonalOS: "Switching to learning mode - I'll focus your research and study aids on AWS certification."
 ```
 
-Each instance creates its own separate:
-- Identity files
-- Memory and patterns
-- Skill levels and autonomy
-- Session logs
+**No manual commands required** - PersonalOS detects context from your natural language and automatically loads the appropriate identity, priorities, and workflows.
 
-**Best Practice:** Use Cowork's context loading to specify which instance to activate for a given conversation.
+### Work Domains (Context Awareness)
 
-### Work Domains
-
-PersonalOS supports context switching between different work domains. You can maintain separate profiles for:
+PersonalOS maintains distinct contexts that it switches between automatically:
 
 - **Work** - Professional context, team, projects
 - **Personal** - Life management, health, finances
 - **Learning** - Study goals, courses, research
 - **Creative** - Writing, art, content creation
 
-To switch domains, use natural language:
-```
-You: "Switch to my work domain"
-PersonalOS: "Context switched. Loading work priorities, team directory, and professional preferences."
-
-You: "I'm in personal mode now"
-PersonalOS: "Context switched. Loading personal priorities, health tracking, and lifestyle preferences."
-```
-
-All skills automatically adapt to the active domain, providing:
-- Domain-specific priorities
-- Appropriate communication style
-- Relevant skills and workflows
-- Separate learning and adaptation per domain
+All contexts are stored in `personal-os/context/` as separate profiles. The agent loads the appropriate context based on your natural language - no manual switching needed.
 
 ---
 
