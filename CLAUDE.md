@@ -141,14 +141,27 @@ If user says "Set up my PersonalOS" or "Start onboarding":
 | **pattern-detect** | Core/Learning | "weekly patterns", "pattern report", "what patterns have you detected" | 1 | No (runs automatically weekly) |
 | **telegram** | Core/Integration | "telegram", "send message", "notifications" | 1 | No (always active if configured) |
 | **computer-use** | Core/Integration | "screenshot", "automate desktop", "organize files", "launch apps", "fill form" | 2 | Yes (6+ sessions for basic, 21+ for advanced) |
-| **self-correction** | Core/Learning | Automatic after every session, "learn from this", "remember my preference" | 1 | Yes (15+ sessions) |
-| **recommendations** | Core/Learning | "any suggestions?", "recommend something", weekly automatic review | 1 | Yes (20+ sessions) |
-| **optimization** | Core/Learning | "optimize my system", "make it faster", weekly automatic cycle | 1 | Yes (25+ sessions) |
+|| **self-correction** | Core/Learning | Automatic after every session, "learn from this", "remember my preference" | 1 | Yes (15+ sessions) |
+|| **recommendations** | Core/Learning | "any suggestions?", "recommend something", weekly automatic review | 1 | Yes (20+ sessions) |
+|| **optimization** | Core/Learning | "optimize my system", "make it faster", weekly automatic cycle | 1 | Yes (25+ sessions) |
+|| **habit-tracker** | Productivity | "track habits", "habit report", "streak status", "add habit" | 1 | Yes (3+ sessions) |
+|| **goal-tracker** | Productivity | "track goals", "goal progress", "set quarterly goals", "monthly goals" | 1 | Yes (2+ sessions) |
+|| **journaling** | Wellness | "journal", "daily entry", "gratitude", "mood check", "reflection" | 1 | Yes (3+ sessions) |
+||| **pomodoro** | Productivity | \"start pomodoro\", \"pomodoro timer\", \"focus session\", \"break time\" | 1 | Yes (4+ sessions) |
+||| **time-logging** | Productivity | \"log time\", \"time report\", \"project time\", \"billable hours\" | 1 | Yes (5+ sessions) |
+||| **citation-manager** | Research | \"add citation\", \"bibliography\", \"format references\", \"cite paper\" | 1 | Yes (6+ sessions) |
+||| **fact-checker** | Research | \"fact check\", \"verify claim\", \"is this true\", \"check sources\" | 1 | Yes (6+ sessions) |
+||| **source-analyzer** | Research | \"analyze source\", \"credibility check\", \"bias detection\", \"trust score\" | 1 | Yes (6+ sessions) |
+||| **knowledge-graph** | Research | \"knowledge graph\", \"related concepts\", \"synthesize research\", \"map connections\" | 1 | Yes (8+ sessions) |
+||| **spaced-repetition** | Research | \"flashcard\", \"review cards\", \"remember this\", \"spaced repetition\" | 1 | Yes (6+ sessions) |
 
+**Phase 1 Skills:** skill-suggester, system-check, daily-agenda, session-summary, draft-email, quick-research, meeting-notes (7 core)
 **Phase 2 Skills:** shortcuts, daily-routine, pattern-detect, telegram (4 new)
 **Phase 3 Skills:** computer-use (1 new - unlocks progressively at Session 6+ and Session 21+)
 **Phase 4 Skills:** self-correction, recommendations, optimization (3 new - unlocks progressively)
-**Note:** Phase 5 will add community sharing capabilities (Week 5)
+**Phase 5 Skills:** habit-tracker, goal-tracker, journaling, pomodoro, time-logging (5 new - unlocks progressively)
+**Phase 6 Skills:** citation-manager, fact-checker, source-analyzer, knowledge-graph, spaced-repetition (5 new - unlocks progressively at Session 6+ and Session 8+)
+**Note:** v1.1.0 adds Core Productivity (5 skills) + Research & Knowledge (5 skills), v1.0.0 released with 11 skills, total: 21 skills
 
 ## Autonomy Level Behavior
 
