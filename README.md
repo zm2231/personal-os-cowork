@@ -2,19 +2,19 @@
 
 A community-shareable personal AI system that learns how you work and adapts over time. Built entirely with Cowork-native patterns—no code, no database, just markdown skills.
 
-**Version:** 1.0.0 (Phases 1-4 Complete)
-**Status:** Production Ready - Full implementation with 15 core skills
+**Version:** 1.1.0 (All 6 Phases Complete)  
+**Status:** Production Ready - Full implementation with 25 core skills
 
 ---
 
 ## What Is PersonalOS?
 
 PersonalOS is a personal AI assistant that:
-- ✅ Adapts to your work patterns over time
-- ✅ Learns your communication style and preferences
-- ✅ Automates recurring workflows via skill progression
-- ✅ Works across Terminal, Telegram, and Computer Use
-- ✅ Requires zero setup—just install and run onboarding
+- Adapts to your work patterns over time
+- Learns your communication style and preferences
+- Automates recurring workflows via skill progression
+- Works across Terminal, Telegram, and Computer Use
+- Requires minimal setup—just install and run onboarding
 
 **Built on Cowork:** Uses Cowork's skills system, frontmatter, and context files—no custom infrastructure.
 
@@ -58,11 +58,11 @@ PersonalOS: "Setup complete! I've learned:
 ### What You Get After Onboarding
 
 **Core Skills Available:**
-- `daily-agenda` - Morning plan from priorities
-- `session-summary` - Capture learnings after work
-- `draft-email` - Style-matched email drafts
-- `quick-research` - 10-min fact-finding with sources
-- `meeting-notes` - Structured capture with action items
+- daily-agenda - Morning plan from priorities
+- session-summary - Capture learnings after work
+- draft-email - Style-matched email drafts
+- quick-research - 10-min fact-finding with sources
+- meeting-notes - Structured capture with action items
 - And 20+ more across 6 skill packs
 
 **Personalization:**
@@ -107,18 +107,18 @@ personal-os-cowork/
 │   │
 │   └── logs/                   # Session history (optional)
 │
-└── skill-packs/                # Skills (read-only, don't edit personal-os/)
+└── skills/                      # Skills (read-only, don't edit personal-os/)
     ├── meta-system/           # Foundation
     ├── personal-management/    # Daily work
     ├── communication/         # Writing
     ├── productivity/          # Getting things done
     ├── research/             # Knowledge work
     ├── collaboration/         # Team work
-    └── learning/             # Growth
+    └── automation/           # Workflow automation
 ```
 
 **Key Design Principle:**
-- `skill-packs/` = System code (upgrade-safe, versioned)
+- `skills/` = System code (upgrade-safe, versioned)
 - `personal-os/` = Your data (persistent, backed up)
 
 ---
@@ -181,6 +181,56 @@ PersonalOS: "I noticed you do [meeting-notes → session-summary → update-prio
 
 ---
 
+## Scalability
+
+### Multiple Instances
+
+**Yes, you can run multiple PersonalOS instances.** Each instance maintains its own separate state in its `personal-os/` directory. To run multiple instances:
+
+```bash
+# Instance 1 (default)
+git clone https://github.com/zm2231/personal-os-cowork.git ~/personal-os-work/
+cp -r ~/personal-os-work ~/.cowork/skills/personal-os-work/
+
+# Instance 2 (personal life)
+git clone https://github.com/zm2231/personal-os-cowork.git ~/personal-os-personal/
+cp -r ~/personal-os-personal ~/.cowork/skills/personal-os-personal/
+```
+
+Each instance creates its own separate:
+- Identity files
+- Memory and patterns
+- Skill levels and autonomy
+- Session logs
+
+**Best Practice:** Use Cowork's context loading to specify which instance to activate for a given conversation.
+
+### Work Domains
+
+PersonalOS supports context switching between different work domains. You can maintain separate profiles for:
+
+- **Work** - Professional context, team, projects
+- **Personal** - Life management, health, finances
+- **Learning** - Study goals, courses, research
+- **Creative** - Writing, art, content creation
+
+To switch domains, use natural language:
+```
+You: "Switch to my work domain"
+PersonalOS: "Context switched. Loading work priorities, team directory, and professional preferences."
+
+You: "I'm in personal mode now"
+PersonalOS: "Context switched. Loading personal priorities, health tracking, and lifestyle preferences."
+```
+
+All skills automatically adapt to the active domain, providing:
+- Domain-specific priorities
+- Appropriate communication style
+- Relevant skills and workflows
+- Separate learning and adaptation per domain
+
+---
+
 ## Cowork Integrations
 
 ### Telegram
@@ -190,6 +240,7 @@ Access PersonalOS from your phone:
 /agenda     → Generate daily agenda
 /summary    → Capture session learnings
 /check      → System health check
+/domain     → Switch work domain
 /skills     → List available skills
 ```
 
@@ -215,106 +266,138 @@ Extend with external services:
 
 ---
 
-## Skill Packs (Phase 1 Status)
+## Skill Packs
 
-### ✅ Meta-System (Foundation)
-- `skill-suggester` - Intent → skill mapping
-- `system-check` - Health check + diagnostics
-- `workflow-builder` - Automate recurring patterns (Phase 4)
-- `skill-upgrader` - L1→L2→L3 progression (Phase 4)
+### Meta-System (Foundation)
+- skill-suggester - Intent → skill mapping
+- system-check - Health check + diagnostics
 
-### 🚧 Personal Management (Phase 2)
-- `daily-agenda` - Morning plan from priorities
-- `session-summary` - Capture learnings
-- `weekly-review` - Reflection + planning
-- `inbox-zero` - Email/task triage
+### Personal Management
+- daily-agenda - Morning plan from priorities
+- session-summary - Capture learnings
+- weekly-review - Reflection + planning
+- inbox-zero - Email/task triage
 
-### 🚧 Communication (Phase 3)
-- `draft-email` - Style-matched emails
-- `summarize-topic` - Quick briefs
-- `presentation` - Slide structure
-- `message-review` - Style guidelines check
+### Communication
+- draft-email - Style-matched emails
+- grammar-check - Grammar and style checking
+- style-transfer - Style adaptation
+- tone-adjuster - Tone modification
+- message-review - Comprehensive pre-send review
+- presentation - Presentation planning and structuring
 
-### 🚧 Research (Phase 3)
-- `quick-research` - 10-min fact-finding
-- `deep-research` - Multi-hour investigation
-- `source-verify` - Cross-check claims
-- `synthesis` - Combine findings
+### Research & Knowledge
+- quick-research - 10-min fact-finding
+- deep-research - Multi-hour investigation
+- source-verify - Cross-check claims
+- citation-manager - Bibliography management
+- fact-checker - Verify claims, cross-check sources
+- source-analyzer - Evaluate source credibility
+- knowledge-graph - Build interconnected knowledge
+- spaced-repetition - Long-term retention optimization
 
-### 🚧 Collaboration (Phase 5)
-- `meeting-notes` - Structured capture
-- `1:1-prep` - Meeting prep
-- `project-status` - Status updates
-- `async-handoff` - Context for async
+### Productivity
+- habit-tracker - Daily habit tracking with streaks
+- goal-tracker - Goal tracking across timeframes
+- journaling - Daily journaling with reflection
+- pomodoro - Focus timer with breaks
+- time-logging - Time tracking with category analysis
 
-### 🚧 Productivity (Phase 5)
-- `task-triage` - Prioritize requests
-- `time-block` - Calendar integration
-- `focus-mode` - Deep work setup
-- `decision-framework` - Structured decisions
+### Collaboration
+- meeting-notes - Structured capture with action items
+- code-review - Code review with quality checks
+- design-feedback - UI/UX design feedback
+- crm-lite - Customer relationship management
+- standup-bot - Daily standup facilitation
+- project-status - Project progress tracking
 
-### 🚧 Learning (Phase 5)
-- `skill-learn` - Learn from code/docs
-- `pattern-extract` - Find automation targets
-- `feedback-loop` - Capture feedback
-- `review-progress` - Track growth
+### Automation
+- task-automation - Automate repetitive tasks
+- workflow-orchestrator - Orchestrate complex workflows
+- notification-manager - Manage notifications and alerts
+- data-sync - Synchronize data, manage backups
+- scheduled-jobs - Schedule recurring tasks
 
 ---
 
 ## Implementation Status
 
-### Phase 1: Foundation ✅ Complete
-- [x] File structure
-- [x] CLAUDE.md orchestration
-- [x] Onboarding system (5-question interview)
-- [x] Meta-system skills (skill-suggester, system-check)
-- [x] Core identity files
+### Phase 1: Foundation Complete
+- File structure
+- CLAUDE.md orchestration
+- Onboarding system (5-question interview)
+- Meta-system skills (skill-suggester, system-check)
+- Core identity files
 
-### Phase 2: Workflow Learning ✅ Complete
-- [x] Shortcuts skill (session 10+ unlock)
-- [x] Daily Routine skill (session 5+ unlock)
-- [x] Pattern Detection skill (automatic weekly)
-- [x] Telegram integration skill (always active)
-- [x] Session tracking templates
+### Phase 2: Workflow Learning Complete
+- Shortcuts skill (session 10+ unlock)
+- Daily Routine skill (session 5+ unlock)
+- Pattern Detection skill (automatic weekly)
+- Telegram integration skill (always active)
+- Session tracking templates
 
-### Phase 3: Computer Use ✅ Complete
-- [x] Computer Use integration skill
-- [x] Basic computer use (session 6+ unlock)
-- [x] Advanced computer use (session 21+ unlock)
-- [x] Workflow templates (daily-setup, downloads-organizer, form-filler)
+### Phase 3: Computer Use Complete
+- Computer Use integration skill
+- Basic computer use (session 6+ unlock)
+- Advanced computer use (session 21+ unlock)
+- Workflow templates (daily-setup, downloads-organizer, form-filler)
 
-### Phase 4: Advanced Learning ✅ Complete
-- [x] Self-Correction skill (session 15+ unlock)
-- [x] Recommendations skill (session 20+ unlock)
-- [x] Optimization skill (session 25+ unlock)
-- [x] Progressive unlock system (10 levels)
+### Phase 4: Advanced Learning Complete
+- Self-Correction skill (session 15+ unlock)
+- Recommendations skill (session 20+ unlock)
+- Optimization skill (session 25+ unlock)
+- Progressive unlock system (10 levels)
 
-### Phase 5: Community Share ✅ Complete
-- [x] Comprehensive installation guide (INSTALL.md)
-- [x] Contribution guidelines (CONTRIBUTING.md)
-- [x] Packaging documentation (PACKAGING.md)
-- [x] Ready for public GitHub release
+### Phase 5: Community Share Complete
+- Comprehensive installation guide (INSTALL.md)
+- Contribution guidelines (CONTRIBUTING.md)
+- Packaging documentation (PACKAGING.md)
+- Ready for public GitHub release
 
-**Total Implementation:** 15 core skills across 4 phases + community documentation
+### Phase 6: Automation Complete
+- 5 automation skills (task-automation, workflow-orchestrator, notification-manager, data-sync, scheduled-jobs)
+- Session unlocks (session 14+)
+- Full integration with all other skill packs
+
+**Total Implementation:** 25 core skills across 6 phases + comprehensive documentation
 
 ---
 
 ## Comparison to Other Systems
 
-| Aspect | ClaudeClaw | PAI | Sidekick | **PersonalOS for Cowork** |
+| Aspect | ClaudeClaw | PAI | Sidekick | PersonalOS for Cowork |
 |--------|------------|-----|----------|-------------------------|
-| **Runtime** | Node.js + SQLite | TypeScript + Hooks | Markdown only | **Markdown + Cowork Skills** |
-| **Memory** | SQLite database | Three-tier (hot/warm/cold) | Markdown files | **Progressive memory files** |
-| **Adaptation** | Agent specialization | Continuous learning | Skill progression | **Context-aware routing** |
-| **Onboarding** | Manual setup | AI-based installation | 5-question interview | **Guided + role detection** |
-| **Complexity** | High (code, DB, services) | Very high (infra) | Medium | **Low (Cowork-native)** |
-| **Shareability** | Partial (needs code) | Low (complex infra) | High | **High (skills + docs)** |
+| **Runtime** | Node.js + SQLite | TypeScript + Hooks | Markdown only | Markdown + Cowork Skills |
+| **Memory** | SQLite database | Three-tier (hot/warm/cold) | Markdown files | Progressive memory files |
+| **Adaptation** | Agent specialization | Continuous learning | Skill progression | Context-aware routing |
+| **Onboarding** | Manual setup | AI-based installation | 5-question interview | Guided + role detection |
+| **Complexity** | High (code, DB, services) | Very high (infra) | Medium | Low (Cowork-native) |
+| **Shareability** | Partial (needs code) | Low (complex infra) | High | High (skills + docs) |
 
 **What Makes PersonalOS Different:**
 1. **Cowork-Native:** Uses Cowork's skills system, frontmatter, and context files
 2. **No Code Required:** Pure markdown, no Node.js or TypeScript
 3. **Progressive Disclosure:** Starts minimal, adds complexity as patterns emerge
 4. **Community Shareable:** Easy to install, customize, and contribute
+5. **Multi-Instance Support:** Run separate instances for work/personal/learning contexts
+6. **Work Domain Switching:** Context switching between different life domains
+
+---
+
+## Known Limitations
+
+### Semantic Search
+PersonalOS currently uses Cowork's built-in context loading for document retrieval. For advanced semantic search (similar to Khoj), you can:
+
+1. **Use Cowork's context search:** Cowork provides semantic search over loaded documents
+2. **Add MCP plugins:** Notion MCP, Obsidian MCP for advanced search
+3. **Future Enhancement:** We plan to add a dedicated semantic-search skill in v1.2.0
+
+**Current Workaround:**
+```
+You: "Search my notes for 'project planning'"
+PersonalOS: Uses Cowork's semantic search over your personal-os/memory/ files
+```
 
 ---
 
@@ -350,6 +433,14 @@ You: "Set up my PersonalOS"
 1. Check `personal-os/context/` files exist (created in onboarding)
 2. Verify `personal-os/adaptation/skill-levels.md` exists
 3. Run `system-check` to verify all files
+
+### "Multiple instances conflict"
+
+**Cause:** Both instances loaded simultaneously in same Cowork context
+
+**Fix:**
+1. Use Cowork's context switching to specify which instance
+2. Or install in separate Cowork workspaces
 
 ---
 
@@ -388,6 +479,6 @@ Built on **Claude Cowork** - Skills system, frontmatter, context files, Telegram
 
 ---
 
-**Current Status:** Phases 1-5 Complete - Production Ready
-**Implementation:** 15 core skills across 4 phases + comprehensive documentation
-**Next Steps:** Public GitHub release + community engagement
+**Current Status:** All 6 Phases Complete - Production Ready
+**Implementation:** 25 core skills across 6 phases + comprehensive documentation
+**Repository:** https://github.com/zm2231/personal-os-cowork

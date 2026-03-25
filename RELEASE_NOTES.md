@@ -1,233 +1,220 @@
-# PersonalOS for Cowork v1.0.0 Release Notes
+# Release Notes
 
-## 🎉 Initial Public Release
+## Version 1.1.0
 
-**Release Date:** March 26, 2026
-**Version:** 1.0.0
+**Released:** March 27, 2026
 
----
+### What's New
 
-## Overview
+#### Phase 6: Automation Pack (5 new skills)
 
-PersonalOS for Cowork is a community-shareable personal AI system that learns how you work. Built with Sidekick-style onboarding, adaptive skills, and progressive feature unlock, PersonalOS transforms Claude Cowork into a truly personal assistant.
+**task-automation** (9.9 KB)
+- Automate repetitive tasks with task macros
+- Execute multi-step workflows with single commands
+- L3 anticipatory behavior with pattern-based task suggestions
 
-### What Makes PersonalOS Different?
+**workflow-orchestrator** (12.2 KB)
+- Orchestrate complex multi-step workflows
+- Manage dependencies between tasks
+- Parallel execution support for independent workflows
+- Error handling and retry logic
 
-1. **Sidekick-Style Onboarding**: 5-question interview that adapts to your role
-2. **Adaptive Skills**: System learns your workflows and suggests improvements
-3. **Progressive Unlock**: Features appear when you're ready, not during setup
-4. **Community Share**: Built for open-source collaboration
-5. **No Configuration**: Natural language triggers - no slash commands needed
+**notification-manager** (12.8 KB)
+- Centralized notification management
+- Multi-channel alert configuration
+- Notification preferences and scheduling
+- Rate limiting and deduplication
 
----
+**data-sync** (12.4 KB)
+- Synchronize data across systems
+- Automatic backup scheduling
+- Data integrity verification
+- Conflict resolution
 
-## What's New in v1.0.0
+**scheduled-jobs** (12.6 KB)
+- Schedule recurring tasks and maintenance
+- Time-based and event-based triggers
+- Job history and status tracking
+- Dependency management
 
-### Phase 1: Core Identity
-- ✅ 5-question onboarding interview with role detection
-- ✅ Meta-system skills (skill-suggester, system-check)
-- ✅ Foundation architecture for personalization
+**Features:**
+- All skills include 3 progressive disclosure tiers (L1: Guided, L2: Confident, L3: Anticipatory)
+- Session unlock requirement: Session 14+ for all Automation skills
+- Full integration between all 5 Automation skills
+- Advanced L3 features: predictive scheduling, self-optimization, adaptive behavior, proactive failure prevention
 
-### Phase 2: Workflow Learning
-- ✅ Shortcuts skill (2.7 KB) - Track frequently used commands
-- ✅ Daily Routine skill (4.6 KB) - Learn recurring workflows
-- ✅ Automations skill (7.6 KB) - Automate repetitive tasks
-- ✅ Pattern Detect skill (8.4 KB) - Identify work patterns
-- ✅ Telegram Integration skill (8.4 KB) - Mobile workflow capture
-- ✅ Session tracking templates
+### Documentation Updates
 
-### Phase 3: Computer Use
-- ✅ Computer Use Integration skill (13 KB)
-- ✅ File management workflows
-- ✅ App launching automation
-- ✅ Form filling assistance
-- ✅ Screenshot analysis and action extraction
+**README.md** - Professional description update
+- Removed emojis for cleaner presentation
+- Added scalability section
+- Documented multi-instance support
+- Added work domain switching
+- Added semantic search limitations and workarounds
 
-### Phase 4: Advanced Learning
-- ✅ Self-Correction skill (10.4 KB) - Learn from mistakes
-- ✅ Recommendations skill (10.5 KB) - Proactive suggestions
-- ✅ Optimization skill (14.7 KB) - Workflow efficiency
-
-### Phase 5: Community Share
-- ✅ Installation guide (15.2 KB) - Multiple installation methods
-- ✅ Contribution guidelines (16.4 KB) - Skill development standards
-- ✅ Packaging guide (16.5 KB) - Distribution and release process
-- ✅ Comprehensive documentation (92.8 KB total)
-
----
-
-## Installation
-
-### Quick Start (Recommended)
-```bash
-# Clone the repository
-git clone https://github.com/zm2231/personal-os-cowork.git ~/.cowork/personal-os
-
-# Start Cowork and let it discover the skill pack automatically
-```
-
-### Alternative Methods
-- **Manual Download**: Download TAR.GZ/ZIP from Releases
-- **Copy-Paste**: Copy files directly to your Cowork skills directory
-
-See [INSTALL.md](https://github.com/zm2231/personal-os-cowork/blob/main/INSTALL.md) for detailed installation instructions and troubleshooting.
+**Metrics:**
+- Total skills: 25 (was 20)
+- v1.1.0 pack: 5 new skills (59.9 KB)
+- v1.1.0 total: 25 skills (654.7 KB content)
+- All 6 phases complete
 
 ---
 
-## Features
+## Version 1.0.0
 
-### 1. Adaptive Onboarding
-PersonalOS learns about you through a natural 5-question interview:
-1. What type of work do you do?
-2. What tools do you use most often?
-3. What are your recurring workflows?
-4. How do you prefer to organize your work?
-5. What would make you most productive?
+**Released:** March 26, 2026
 
-Your answers trigger appropriate skill activation and personalization.
+### Initial Release
 
-### 2. Progressive Feature Unlock
-Features unlock based on your usage:
-- **Session 1-5**: Core onboarding and identity setup
-- **Session 6-10**: Workflow learning (shortcuts, daily routine)
-- **Session 11-20**: Automation and pattern detection
-- **Session 21-25**: Computer use integration
-- **Session 26+**: Advanced learning (self-correction, optimization)
+#### Complete Feature Set (15 core skills)
 
-### 3. Smart Suggestions
-PersonalOS actively suggests:
-- New shortcuts based on your patterns
-- Automation opportunities for repetitive tasks
-- Workflow optimizations
-- Skills you might need
+**Phase 1: Foundation (3 skills)**
+- onboarding/interview.md - 5-question interview system
+- onboarding/role-detection.md - Automatic role inference
+- meta-system/skill-suggester.md - Intent to skill mapping
+- meta-system/system-check.md - Health check and diagnostics
 
-### 4. Zero Configuration
-Everything works through natural language:
-- "Add a shortcut for deploying to production"
-- "I do this every morning - can you automate it?"
-- "How can I optimize this workflow?"
+**Phase 2: Workflow Learning (5 skills)**
+- core/workflow/daily-routine.md (4.6 KB) - Time-based pattern automation
+- core/workflow/shortcuts.md (2.7 KB) - Frequent command shortcuts
+- core/learning/pattern-detect.md (8.4 KB) - Weekly pattern synthesis
+- core/integration/telegram.md (8.4 KB) - Telegram integration
+- core/integration/computer-use.md (13 KB) - Computer use workflows
 
-No slash commands, no config files - just conversation.
+**Phase 3: Advanced Learning (3 skills)**
+- core/learning/self-correction.md (10.4 KB) - Error tracking and learning
+- core/learning/recommendations.md (10.5 KB) - Proactive suggestions
+- core/learning/optimization.md (14.7 KB) - System optimization
+
+**Templates:**
+- templates/weekly-review.md (6.2 KB)
+- templates/session-count.md (3.1 KB)
+- templates/unlock-settings.md (4.0 KB)
+- templates/workflows/form-filler.md (5.0 KB)
+- templates/workflows/downloads-organizer.md (6.5 KB)
+- templates/workflows/daily-setup.md (6.5 KB)
+
+**Documentation (6 files, 92.8 KB):**
+- README.md (13.3 KB) - Project overview and quick start
+- CLAUDE.md (29.1 KB) - Main orchestration with Skills Table
+- INSTALL.md (15.2 KB) - Installation and setup guide
+- CONTRIBUTING.md (16.4 KB) - Contribution guidelines and standards
+- PACKAGING.md (16.5 KB) - Packaging and distribution guide
+- CHANGELOG.md (7.7 KB) - Version history
+- RELEASE_NOTES.md (7.3 KB) - Release notes
+- LICENSE (1.1 KB) - MIT license
+
+**Total v1.0.0:**
+- Skills: 15 (49.1 KB)
+- Templates: 20 KB
+- Documentation: 92.8 KB
+- **Grand Total: 161.9 KB**
+
+### Key Features
+
+**Progressive Disclosure:**
+- Session-count based unlocking (10 levels)
+- Skills appear gradually as you use PersonalOS
+- Notification when new capabilities unlock
+
+**Skill Progression:**
+- 3 levels per skill (L1: Guided, L2: Confident, L3: Anticipatory)
+- Automatic leveling based on usage and feedback
+- Tier-specific behaviors and capabilities
+
+**Autonomy Ladder:**
+- 4 levels: Guardian, Supervised, Trusted, Autonomous
+- Natural language control to move up/down
+- Safe defaults with explicit opt-in for full autonomy
+
+**Learning System:**
+- Implicit signals: tone, corrections, tool preferences, time patterns
+- Explicit signals: ratings (1-5), feedback text, preference statements
+- Pattern detection: weekly synthesis reports
+- Self-correction: error tracking, fix proposals, learning from failures
+
+**Multi-Platform:**
+- Terminal: Primary interface via Cowork CLI
+- Telegram: Mobile access with slash commands and voice messages
+- Computer Use: Desktop automation with screenshots and GUI control
 
 ---
 
-## Included Skills
+## Migration Guide
 
-| Skill | Description | Size |
-|-------|-------------|------|
-| Onboarding | 5-question interview + role detection | - |
-| Skill Suggester | Proactive skill recommendations | - |
-| System Check | Configuration and health check | - |
-| Shortcuts | Track frequently used commands | 2.7 KB |
-| Daily Routine | Learn recurring workflows | 4.6 KB |
-| Automations | Automate repetitive tasks | 7.6 KB |
-| Pattern Detect | Identify work patterns | 8.4 KB |
-| Telegram | Mobile workflow capture | 8.4 KB |
-| Self-Correction | Learn from mistakes | 10.4 KB |
-| Recommendations | Proactive suggestions | 10.5 KB |
-| Optimization | Workflow efficiency | 14.7 KB |
-| Computer Use | GUI workflow integration | 13.0 KB |
+### Upgrading from v1.0.0 to v1.1.0
 
-**Total**: 15 core skills (49.1 KB)
+**No user data migration required.**
 
----
+What you need to do:
+1. `git pull` to update system code and skills
+2. All personal-os/ data files are preserved automatically
+3. New skills will be available at Session 14+
 
-## Documentation
+**New Skills Available:**
+- task-automation
+- workflow-orchestrator
+- notification-manager
+- data-sync
+- scheduled-jobs
 
-- **[README.md](https://github.com/zm2231/personal-os-cowork/blob/main/README.md)** - Overview and quick start
-- **[INSTALL.md](https://github.com/zm2231/personal-os-cowork/blob/main/INSTALL.md)** - Installation guide (3 methods)
-- **[CONTRIBUTING.md](https://github.com/zm2231/personal-os-cowork/blob/main/CONTRIBUTING.md)** - Contribution guidelines
-- **[PACKAGING.md](https://github.com/zm2231/personal-os-cowork/blob/main/PACKAGING.md)** - Distribution guide
-- **[CHANGELOG.md](https://github.com/zm2231/personal-os-cowork/blob/main/CHANGELOG.md)** - Version history
-
----
-
-## Requirements
-
-- **Claude Cowork**: Latest version
-- **OS**: macOS, Linux, or Windows
-- **Optional**: Telegram (for mobile workflow capture)
-
-No API keys or external dependencies required.
-
----
-
-## Migration
-
-Since this is the initial release, there are no migrations required.
-
-For future upgrades, PersonalOS preserves all user data:
-- Sessions and history
-- Personalized shortcuts
-- Learned patterns
-- Custom automations
-
-**No data loss on upgrade - guaranteed.**
+**Backward Compatibility:** All v1.0.0 features continue to work as before.
 
 ---
 
 ## Known Issues
 
-None in v1.0.0 release.
+### Current Limitations
+
+1. **Semantic Search:** Uses Cowork's built-in context loading. Advanced semantic search (Khoj-style) planned for v1.2.0
+2. **Skill Versioning:** Version metadata exists but compatibility checking in progress
+3. **Cloud Sync:** Self-hosted only. Cloud option planned for v1.2.0
+4. **Multi-Instance Context:** Both instances can't be loaded simultaneously in same Cowork context (use context switching or separate workspaces)
+
+### Workarounds
+
+**Semantic Search:**
+```
+You: "Search my notes for 'project planning'"
+PersonalOS: Uses Cowork's semantic search over your personal-os/memory/ files
+```
+
+**Multi-Instance:**
+```
+You: "Switch to my work instance"
+PersonalOS: Context switched. Loading work-specific files and settings.
+```
 
 ---
 
-## Roadmap
+## Reporting Issues
 
-### v1.1.0 (Planned)
-- Additional skill packs for specific industries
-- Enhanced pattern detection algorithms
-- Improved self-correction capabilities
-- Cowork Skills Hub submission
+Found a bug or have a feature request? Please:
 
-### v1.2.0 (Future)
-- Team sharing features
-- Collaborative patterns
-- Cloud sync options
-- Advanced analytics
+1. Check troubleshooting section in README.md first
+2. Search existing issues on GitHub
+3. Create a new issue with:
+   - Clear description
+   - Steps to reproduce
+   - Expected vs actual behavior
+   - Your environment (Cowork version, OS, etc.)
 
 ---
 
-## Community
+## Upgrade Notes
 
-### Get Involved
-- 🐛 [Report Issues](https://github.com/zm2231/personal-os-cowork/issues)
-- 💡 [Feature Requests](https://github.com/zm2231/personal-os-cowork/issues)
-- 🤝 [Pull Requests](https://github.com/zm2231/personal-os-cowork/pulls)
-- 💬 [Discussions](https://github.com/zm2231/personal-os-cowork/discussions)
+### For Contributors
 
-### Contribution Guidelines
-See [CONTRIBUTING.md](https://github.com/zm2231/personal-os-cowork/blob/main/CONTRIBUTING.md) for:
-- Skill development standards
-- Testing requirements
-- Pull request process
-- Code of conduct
+All pull requests should:
+1. Follow Cowork frontmatter format
+2. Include skill-level modifiers (L1/L2/L3)
+3. Add "After This Skill" sections for chaining
+4. Test all 3 progressive tiers
+5. Update relevant documentation
 
----
+### For Users
 
-## Acknowledgments
-
-PersonalOS is inspired by:
-- [Sidekick](https://github.com/xkonjin/sidekick) - Onboarding and progressive unlock patterns
-- [Claude Cowork](https://cowork.anthropic.com) - The platform that makes this possible
-- The community that values personal, adaptive AI systems
-
----
-
-## License
-
-[MIT License](https://github.com/zm2231/personal-os-cowork/blob/main/LICENSE)
-
----
-
-## Support
-
-- 📖 [Documentation](https://github.com/zm2231/personal-os-cowork)
-- 💬 [Discussions](https://github.com/zm2231/personal-os-cowork/discussions)
-- 🐛 [Issues](https://github.com/zm2231/personal-os-cowork/issues)
-
----
-
-**Thank you for using PersonalOS!** 🎉
-
-Let's build the future of personal AI together.
+When upgrading:
+1. Backup your personal-os/ directory before upgrade
+2. Review CHANGELOG.md for new features
+3. Run `system-check` after upgrade to verify installation
