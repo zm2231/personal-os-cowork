@@ -153,7 +153,22 @@ If user says "Set up my PersonalOS" or "Start onboarding":
 ||| **fact-checker** | Research | \"fact check\", \"verify claim\", \"is this true\", \"check sources\" | 1 | Yes (6+ sessions) |
 ||| **source-analyzer** | Research | \"analyze source\", \"credibility check\", \"bias detection\", \"trust score\" | 1 | Yes (6+ sessions) |
 ||| **knowledge-graph** | Research | \"knowledge graph\", \"related concepts\", \"synthesize research\", \"map connections\" | 1 | Yes (8+ sessions) |
-||| **spaced-repetition** | Research | \"flashcard\", \"review cards\", \"remember this\", \"spaced repetition\" | 1 | Yes (6+ sessions) |
+|||| **spaced-repetition** | Research | \\\"flashcard\\\", \\\"review cards\\\", \\\"remember this\\\", \\\"spaced repetition\\\" | 1 | Yes (6+ sessions) |
+|||| **grammar-check** | Writing & Communication | \\\"grammar check\\\", \\\"check my writing\\\", \\\"fix grammar\\\", \\\"proofread\\\" | 1 | Yes (9+ sessions) |
+|||| **style-transfer** | Writing & Communication | \\\"style transfer\\\", \\\"rewrite in style\\\", \\\"change writing style\\\", \\\"rephrase\\\" | 1 | Yes (10+ sessions) |
+|||| **tone-adjuster** | Writing & Communication | \\\"adjust tone\\\", \\\"change tone\\\", \\\"more formal\\\", \\\"more casual\\\" | 1 | Yes (11+ sessions) |
+|||| **presentation** | Writing & Communication | \\\"presentation\\\", \\\"slide deck\\\", \\\"create slides\\\", \\\"presentation outline\\\" | 1 | Yes (12+ sessions) |
+|||| **message-review** | Writing & Communication | \\\"review message\\\", \\\"check before sending\\\", \\\"message feedback\\\", \\\"improve message\\\" | 1 | Yes (13+ sessions) |
+|||| **code-review** | Collaboration | \\\"review code\\\", \\\"check this PR\\\", \\\"code review\\\", \\\"quality check\\\" | 1 | Yes (14+ sessions) |
+|||| **design-feedback** | Collaboration | \\\"review design\\\", \\\"UI feedback\\\", \\\"check this mockup\\\", \\\"design review\\\" | 1 | Yes (14+ sessions) |
+|||| **crm-lite** | Collaboration | \\\"track contact\\\", \\\"add deal\\\", \\\"CRM\\\", \\\"follow up\\\" | 1 | Yes (14+ sessions) |
+|||| **standup-bot** | Collaboration | \\\"standup\\\", \\\"team update\\\", \\\"daily sync\\\", \\\"status report\\\" | 1 | Yes (14+ sessions) |
+||||| **project-status** | Collaboration | \\\\\\\"project status\\\\\\", \\\\\\\"progress report\\\\\\", \\\\\\\"how is [project]\\\\\\\" | 1 | Yes (14+ sessions) |
+||||| **task-automation** | Automation | \\\\\\\"automate this task\\\\\\", \\\\\\\"create automation\\\\\\", \\\\\\\"task macro\\\\\\", \\\\\\\"routine task\\\\\\\" | 1 | Yes (14+ sessions) |
+||||| **workflow-orchestrator** | Automation | \\\\\\\"workflow\\\\\\", \\\\\\\"orchestrate\\\\\\", \\\\\\\"multi-step process\\\\\\", \\\\\\\"manage dependencies\\\\\\\" | 1 | Yes (14+ sessions) |
+||||| **notification-manager** | Automation | \\\\\\\"notification settings\\\\\\", \\\\\\\"manage alerts\\\\\\", \\\\\\\"quiet mode\\\\\\", \\\\\\\"notification spam\\\\\\\" | 1 | Yes (14+ sessions) |
+||||| **data-sync** | Automation | \\\\\\\"sync data\\\\\\", \\\\\\\"backup files\\\\\\", \\\\\\\"file synchronization\\\\\\", \\\\\\\"data consistency\\\\\\\" | 1 | Yes (14+ sessions) |
+||||| **scheduled-jobs** | Automation | \\\\\\\"schedule a task\\\\\\", \\\\\\\"recurring task\\\\\\", \\\\\\\"daily job\\\\\\", \\\\\\\"cron job\\\\\\\" | 1 | Yes (14+ sessions) |
 
 **Phase 1 Skills:** skill-suggester, system-check, daily-agenda, session-summary, draft-email, quick-research, meeting-notes (7 core)
 **Phase 2 Skills:** shortcuts, daily-routine, pattern-detect, telegram (4 new)
@@ -161,7 +176,10 @@ If user says "Set up my PersonalOS" or "Start onboarding":
 **Phase 4 Skills:** self-correction, recommendations, optimization (3 new - unlocks progressively)
 **Phase 5 Skills:** habit-tracker, goal-tracker, journaling, pomodoro, time-logging (5 new - unlocks progressively)
 **Phase 6 Skills:** citation-manager, fact-checker, source-analyzer, knowledge-graph, spaced-repetition (5 new - unlocks progressively at Session 6+ and Session 8+)
-**Note:** v1.1.0 adds Core Productivity (5 skills) + Research & Knowledge (5 skills), v1.0.0 released with 11 skills, total: 21 skills
+**Phase 7 Skills:** grammar-check, style-transfer, tone-adjuster, presentation, message-review (5 new - unlocks progressively at Session 9+ through Session 13+)
+**Phase 8 Skills:** code-review, design-feedback, crm-lite, standup-bot, project-status (5 new - unlocks progressively at Session 14+)
+**Phase 9 Skills:** task-automation, workflow-orchestrator, notification-manager, data-sync, scheduled-jobs (5 new - unlocks progressively at Session 14+)
+**Note:** v1.1.0 adds Core Productivity (5 skills) + Research & Knowledge (5 skills) + Writing & Communication (5 skills) + Collaboration (5 skills) + Automation (5 skills), v1.0.0 released with 11 skills, total: 36 skills (when v1.0.0 core skills are implemented)
 
 ## Autonomy Level Behavior
 
