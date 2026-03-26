@@ -1,11 +1,8 @@
 ---
 name: pomodoro
+description: "Trigger when: pomodoro, focus timer, 25 minutes. Runs Pomodoro focus sessions with breaks and focus tracking."
 version: 1.0.0
-description: Pomodoro timer with breaks and focus tracking
-tier: L1
-type: productivity
-unlock: session-4
-requires: [daily-routine]
+compatibility: personal-os >= 1.0.0
 ---
 
 # Pomodoro Timer

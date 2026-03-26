@@ -1,11 +1,8 @@
 ---
 name: habit-tracker
+description: "Trigger when: track habit, habit streak, check habit. Tracks daily habits with streaks and consistency metrics."
 version: 1.0.0
-description: Track daily habits with streaks and consistency metrics
-tier: L1
-type: productivity
-unlock: session-1
-requires: [daily-routine]
+compatibility: personal-os >= 1.0.0
 ---
 
 # Habit Tracker

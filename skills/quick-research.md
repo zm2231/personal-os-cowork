@@ -1,12 +1,8 @@
 ---
 name: quick-research
-description: Conduct efficient research on any topic, synthesize findings, and extract actionable insights
+description: "Trigger when: research, look up, find information. Conducts efficient research on any topic, synthesizes findings, and extracts actionable insights."
 version: 1.0.0
-metadata:
-  hermes:
-    tags: [research, productivity, knowledge-management, fact-checking]
-    related_skills: [citation-manager, fact-checker, source-analyzer, knowledge-graph]
-    unlock: session-4
+compatibility: personal-os >= 1.0.0
 ---
 
 # Quick Research
@@ -1153,3 +1149,12 @@ Research Quality:
 - Sources properly cited > 95%
 - Confidence levels provided for predictions > 100%
 - Pattern identification success > 70%
+
+## After This Skill
+
+| If research found... | Suggest... |
+|---|---|
+| Contradicts existing belief | "This conflicts with what I have on record. Want me to update?" |
+| New competitors mentioned | Silently create/update `memory/competitors/[name].md` |
+| Decision-relevant info | "This seems relevant to your [priority]. Want me to log a note?" |
+| Needs deeper dive | "Want me to build a knowledge brief on this topic?" |

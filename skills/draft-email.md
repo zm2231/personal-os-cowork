@@ -1,12 +1,8 @@
 ---
 name: draft-email
-description: Draft professional emails with appropriate tone, clarity, and effectiveness for any communication scenario
+description: "Trigger when: draft email, write to [person], email about [topic]. Drafts professional emails with appropriate tone, clarity, and effectiveness for any communication scenario."
 version: 1.0.0
-metadata:
-  hermes:
-    tags: [communication, writing, productivity, professionalism]
-    related_skills: [message-review, tone-adjuster, style-transfer, grammar-check]
-    unlock: session-3
+compatibility: personal-os >= 1.0.0
 ---
 
 # Draft Email
@@ -826,3 +822,12 @@ Negotiation strategy applied:
 - Tone appropriate for recipient > 90%
 - Clear call to action in every email > 95%
 - Grammar and style errors < 5%
+
+## After This Skill
+
+| After drafting... | Suggest... |
+|---|---|
+| Always | "Review before sending — nothing goes out without your approval." |
+| Mentioned new person | Silently add to `context/team-directory.md` if not there |
+| Decision in email | "Should I log this decision to your decision log?" |
+| Follow-up pattern detected | Note in `memory/patterns.md` if this type of email is recurring |

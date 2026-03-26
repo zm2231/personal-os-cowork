@@ -1,11 +1,8 @@
 ---
 name: time-logging
+description: "Trigger when: log time, track hours, time entry. Tracks time spent on tasks and projects with category analysis."
 version: 1.0.0
-description: Track time spent on tasks and projects with category analysis
-tier: L1
-type: productivity
-unlock: session-5
-requires: [daily-routine]
+compatibility: personal-os >= 1.0.0
 ---
 
 # Time Logging

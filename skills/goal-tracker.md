@@ -1,11 +1,8 @@
 ---
 name: goal-tracker
+description: "Trigger when: track goal, goal progress, milestones. Tracks progress on goals across timeframes with metrics and milestones."
 version: 1.0.0
-description: Track progress on goals across timeframes with metrics and milestones
-tier: L1
-type: productivity
-unlock: session-2
-requires: [habit-tracker]
+compatibility: personal-os >= 1.0.0
 ---
 
 # Goal Tracker

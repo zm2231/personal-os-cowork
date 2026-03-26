@@ -1,12 +1,8 @@
 ---
 name: meeting-notes
-description: Capture, organize, and synthesize meeting notes with automatic action item extraction and key takeaways
+description: "Trigger when: meeting notes, capture this meeting. Captures, organizes, and synthesizes meeting notes with automatic action item extraction and key takeaways."
 version: 1.0.0
-metadata:
-  hermes:
-    tags: [productivity, collaboration, documentation, workflow]
-    related_skills: [session-summary, task-automation, project-status, standup-bot]
-    unlock: session-5
+compatibility: personal-os >= 1.0.0
 ---
 
 # Meeting Notes
@@ -936,3 +932,12 @@ Low Confidence (<50% completion):
 - Decisions documented with rationale > 90%
 - Meeting summaries delivered within 24 hours > 85%
 - Overdue action items < 10%
+
+## After This Skill
+
+| If meeting contained... | Suggest... |
+|---|---|
+| Action items assigned | "Want me to add these to your priorities?" |
+| Decisions made | "Logging decisions to your decision log..." → `memory/decisions.md` |
+| New people mentioned | Silently add to `context/team-directory.md` |
+| Follow-up needed | "Want me to draft a follow-up?" → `skills/draft-email.md` |

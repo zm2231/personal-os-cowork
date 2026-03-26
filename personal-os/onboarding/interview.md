@@ -1,7 +1,7 @@
 ---
 name: onboarding-interview
 description: "Trigger when: 'Set up my PersonalOS', 'Start onboarding', 'I'm new'. Runs 5-question interview to create personal context."
-version: 1.0.0
+version: 1.1.0
 metadata:
   hermes:
     tags: [onboarding, setup, initialization]
@@ -29,6 +29,26 @@ Run this skill when:
 PersonalOS: "Let's get to know you. I'll ask 5 questions—each takes a minute or two.
             This helps me adapt to how you work."
 ```
+
+---
+
+### Step 0: Tool Discovery (silent, 30 seconds)
+
+Before asking questions, silently probe for available MCP tools:
+- Try a calendar tool call (Google Calendar, Outlook)
+- Try a messaging tool call (Slack, Teams, Discord)
+- Try a notes tool call (Notion, Granola, Otter)
+- Try an email tool call (Gmail, Outlook)
+
+Present a quick status table, then proceed:
+| Tool | Status |
+|---|---|
+| Calendar | Connected / Not connected |
+| Messaging | Connected / Not connected |
+| Meeting notes | Connected / Not connected |
+| Email | Connected / Not connected |
+
+Don't block on missing tools or explain how to add them. Just show status.
 
 ---
 
@@ -352,6 +372,74 @@ As we work together, skills will level up based on:
 **Last Updated:** 2026-03-26
 ```
 
+9. **`personal-os/memory/confidence-flags.md`**
+
+```markdown
+# Confidence Flags
+*Tracks certainty levels. Auto-updated when corrections are received.*
+
+## Active Flags
+*None yet.*
+
+**Last Updated:** [date]
+```
+
+10. **`personal-os/memory/decisions.md`**
+
+```markdown
+# Decision Log
+*Auto-populated when you say "we decided X" or "I decided to..."*
+
+## Active Decisions
+*None yet.*
+
+**Last Updated:** [date]
+```
+
+11. **`personal-os/adaptation/installed-packs.md`**
+
+```markdown
+# Installed Skill Packs
+| Pack | Installed | Reason |
+|---|---|---|
+| Core skills | [date] | Built-in |
+
+**Last Updated:** [date]
+```
+
+12. **`personal-os/context/snapshot.md`** — populate this from the answers just given:
+
+```markdown
+# PersonalOS Snapshot
+**Last Updated:** [today's date]
+
+## Identity
+**Name:** [from Q1]
+**Role:** [from Q1]
+**Company:** [from Q1]
+
+## Priorities
+1. [from Q2]
+2. [from Q2]
+3. [from Q2]
+
+## Autonomy
+**Level:** L1 — Guardian
+
+## Skill Levels
+(none above L1 yet)
+
+## Installed Packs
+[from role detection, or "none beyond core"]
+
+## Confidence Flags
+**Active flags:** 0
+
+## Context Health
+**Last refresh:** [today's date]
+**Stale warning:** no
+```
+
 ---
 
 ## Completion Message
@@ -359,26 +447,44 @@ As we work together, skills will level up based on:
 After all files are created, show this summary:
 
 ```
-✅ Setup complete!
+✅ PersonalOS setup complete!
 
-Here's what I now know about you:
+Here's what I know about you:
+✓ [Name], [Role] at [Company]
+✓ Priorities: [P1], [P2], [P3]
+✓ Communication: [Tone], [Length]
+✓ Team: [N] key collaborators
+✓ Vocabulary: [N] terms defined
 
-✓ Your identity: [Name], [Role] at [Company]
-✓ Your priorities: [Priority 1], [Priority 2], [Priority 3]
-✓ Your communication style: [Tone], [Length], [Style]
-✓ Your team: [Number] key collaborators
-✓ Your vocabulary: [Number] internal terms defined
+I'm starting at autonomy level 1 (Guardian) — I'll confirm actions before executing.
+As we work together, skills level up automatically based on what you do, not session counts.
 
-I'm starting at autonomy level 1 (Guardian)—I'll confirm actions before executing.
-As we work together, I'll learn your patterns and level up my skills.
+**Mobile access:** Use Cowork's Dispatch feature to assign tasks from your phone.
+Setup takes 2 min: Claude Desktop → sidebar → Dispatch → scan QR code.
 
-Try saying:
-- "What can you do?" - See all available skills
-- "What should I focus on today?" - Generate daily agenda
-- "Help me with..." - I'll suggest the right skill
+**Voice tip:** On Mac, press Fn twice to start dictating. Talk about your work naturally — I'll structure it.
 
-Ready when you are!
+Try:
+- "What should I focus on today?" → daily agenda
+- "We decided to..." → logs to your decision log
+- /check → verify setup
+- /agenda → generate today's plan
 ```
+
+---
+
+## Scheduled Tasks Offer (after setup)
+
+After showing the completion message, ask once:
+"Want me to set up any recurring automated tasks? I can configure:
+- Daily morning briefing (pulls priorities + calendar)
+- Friday weekly summary
+- Monday planning session
+
+These use Cowork's built-in scheduling. Want to set any up now?"
+
+If yes → set up using Cowork scheduled tasks, not manual templates.
+If no → note it in preferences.md and don't ask again.
 
 ---
 

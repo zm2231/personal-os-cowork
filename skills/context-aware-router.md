@@ -1,11 +1,8 @@
 ---
 name: context-aware-router
-description: "Trigger on EVERY user message. Automatically detects which domain the user is working on from natural language. Loads domain context without explicit commands. This is the primary domain detection mechanism (95%+ of cases)."
+description: "Trigger when: every user message. Automatically detects which domain the user is working on from natural language and loads domain context without explicit commands."
 version: 1.0.0
-metadata:
-  hermes:
-    tags: [domains, context-awareness, automatic-detection, core]
-    priority: critical
+compatibility: personal-os >= 1.0.0
 ---
 
 # Context-Aware Router

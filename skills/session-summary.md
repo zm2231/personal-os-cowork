@@ -1,12 +1,8 @@
 ---
 name: session-summary
-description: Generate comprehensive session summaries capturing key outcomes, decisions, action items, and learnings
+description: "Trigger when: session summary, wrap up, what did we do. Generates comprehensive session summaries capturing key outcomes, decisions, action items, and learnings."
 version: 1.0.0
-metadata:
-  hermes:
-    tags: [productivity, documentation, knowledge-management, workflow]
-    related_skills: [knowledge-graph, spaced-repetition, message-review, quick-research]
-    unlock: session-2
+compatibility: personal-os >= 1.0.0
 ---
 
 # Session Summary
@@ -645,3 +641,12 @@ Recommendation: Start with 75-min agenda, leave 45-min buffer
 - Decisions documented with rationale > 90%
 - Summaries searchable by topic > 100%
 - Pattern analysis run weekly > 80% compliance
+
+## After This Skill
+
+| If session contained... | Suggest... |
+|---|---|
+| Decisions made | "I can log those to your decision log. Want me to?" → `memory/decisions.md` |
+| Recurring pattern detected | "I noticed you did [X] again. Want to save it as a shortcut?" |
+| Priority progress | Update `memory/current-priorities.md` silently |
+| End of week | "Want me to generate a weekly summary?" → `skills/session-summary.md` with weekly mode |

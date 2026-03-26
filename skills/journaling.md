@@ -1,11 +1,8 @@
 ---
 name: journaling
+description: "Trigger when: journal, reflect on my day, gratitude. Guides daily journaling with reflection prompts, gratitude, and mood tracking."
 version: 1.0.0
-description: Daily journaling with reflection, gratitude, and mood tracking
-tier: L1
-type: wellness
-unlock: session-3
-requires: [daily-routine]
+compatibility: personal-os >= 1.0.0
 ---
 
 # Journaling

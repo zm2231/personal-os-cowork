@@ -1,12 +1,8 @@
 ---
 name: daily-agenda
-description: Plan and manage your daily agenda, prioritize tasks, and optimize your schedule for maximum productivity
+description: "Trigger when: agenda, what's my day, morning plan. Plans and manages your daily agenda with prioritization and schedule optimization."
 version: 1.0.0
-metadata:
-  hermes:
-    tags: [productivity, planning, scheduling, time-management]
-    related_skills: [habit-tracker, goal-tracker, pomodoro, task-automation, scheduled-jobs]
-    unlock: session-1
+compatibility: personal-os >= 1.0.0
 ---
 
 # Daily Agenda
@@ -567,3 +563,12 @@ Agenda updated with:
 - Deep work time > 2 hours/day
 - Agenda completion (including review) daily
 - Weekly goal alignment > 80%
+
+## After This Skill
+
+| If agenda contains... | Suggest... |
+|---|---|
+| Blocked tasks | "I see [X] is blocked. Want me to audit your blockers?" |
+| Meeting prep needed | "You have [meeting] today. Want me to prep notes?" |
+| Overloaded day | "Your plate looks full. Want help prioritizing?" |
+| End of day review | `skills/session-summary.md` |
