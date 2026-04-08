@@ -95,8 +95,8 @@ For each field with memory mapping:
 Example:
   Field: Full Name
   Source: identity.md
-  Value: "Zain M."
-  Action: Fill field with "Zain M."
+  Value: "Alex J."
+  Action: Fill field with "Alex J."
 
   Field: Email
   Source: identity.md
@@ -130,9 +130,9 @@ Show user what was filled:
 "Form ready for submission:
 
 **Auto-filled from memory:**
-- Full Name: Zain M. ✓
+- Full Name: Alex J. ✓
 - Email: zain@example.com ✓
-- Project: Cadence R&D ✓
+- Project: Acme Project ✓
 - Date: March 25, 2026 ✓
 
 **Values you provided:**
@@ -172,9 +172,9 @@ After filling form:
 
   | Field Name | Type | Source | Value |
   |------------|------|--------|-------|
-  | Full Name | text | identity.md.full_name | Zain M. |
+  | Full Name | text | identity.md.full_name | Alex J. |
   | Email | email | identity.md.email | zain@example.com |
-  | Project | dropdown | current-priorities.md.active_project | Cadence R&D |
+  | Project | dropdown | current-priorities.md.active_project | Acme Project |
   | Hours Worked | number | user_input | 8 |
   | Task Description | textarea | user_input | Phase 3 implementation |
   | Date | date | auto | 2026-03-25 |
@@ -226,7 +226,7 @@ field_mappings:
   project:
     source: current-priorities.md.active_project
     required: true
-    options: [Cadence R&D, Client Work, Internal]
+    options: [Acme Project, Client Work, Internal]
 
   hours_worked:
     source: user_input

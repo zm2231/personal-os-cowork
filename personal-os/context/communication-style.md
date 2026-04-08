@@ -1,16 +1,9 @@
 # Communication Style
+*Populated by /onboarding-interview Q3. Auto-updated when style corrections are received.*
 
-**Tone:** Casual
+**Tone:** [Formal / Casual] [confirmed]
+**Length:** [Brief / Detailed] [confirmed]
+**Directness:** [Very direct / Moderate / Gentle] [confirmed]
+**Notes:** [Any additional style notes — e.g., "skip preamble", "data-driven framing preferred"]
 
-**Length Preference:** Brief — direct, punchy, no fluff
-
-**Style:** Async
-
-**Directness:** Very direct
-
-**Analytical:** Yes — data-driven, analytical framing preferred over narrative hand-holding
-
-**Notes:**
-Skip preamble. Get to the point. No unnecessary summaries or restating what was just said. Zain moves fast — match the pace.
-
-**Last Updated:** 2026-03-25
+**Last Updated:** [YYYY-MM-DD]

@@ -44,11 +44,10 @@ When you message from your phone via Dispatch:
 - Voice dictation works great with Dispatch — dictate naturally, PersonalOS structures it
 - Dispatch uses the same MCP connectors and plugins you've configured in Cowork
 
-## Want Telegram Instead?
+## Want Push Notifications?
 
-Telegram integration requires **Claude Code** (the terminal tool), not Cowork. It uses the official Claude Code Channels plugin:
-- Requires Claude Code v2.1.80+, Bun runtime, Pro/Max/Team/Enterprise
-- Setup: Create bot via BotFather → install plugin → configure token → restart with `--channels` flag
-- See: github.com/anthropics/claude-plugins-official
+**Option A — Channels (Claude Code CLI):** Claude Code supports a Channels feature that pushes external events (Telegram, Discord, iMessage) into a running session via the `--channels` flag and channel plugins. Requires an active Claude Code session. See official Claude Code docs for current setup instructions.
 
-For most Cowork users, Dispatch covers the same use case without extra setup.
+**Option B — Scheduled task push:** Configure a Desktop scheduled task to read `personal-os/context/notifications.md` and push output to your preferred channel after completing work. Works without an active session.
+
+For most Cowork users, Dispatch covers mobile access without extra setup.

@@ -37,9 +37,16 @@ wheels/
 .installed.cfg
 *.egg
 
+# Obsidian vault config (per-user, not template)
+.obsidian/
+
 # User-specific data (DO NOT commit user preferences!)
-# PersonalOS adapts to users - keep their data local
-sessions/
+# PersonalOS populates these during onboarding — they contain personal data
+# Keep a local copy; do not commit to forks of this template
+personal-os/logs/sessions/
+personal-os/context/notifications.md
+
+# Legacy session data
 *.session.json
 user-adaptations/
 user-shortcuts/

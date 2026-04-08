@@ -358,7 +358,7 @@ User: "I need to prep for the 2pm meeting with the product team"
 
 ## Community & Support
 
-- **GitHub:** https://github.com/zm2231/personal-os-cowork
+- **GitHub:** https://github.com/your-username/personal-os-cowork
 - **Issues:** Report bugs and feature requests via GitHub Issues
 - **Discussions:** Share workflows and get community support
 - **Cowork Discord:** Join the community for Cowork-specific discussions
@@ -376,7 +376,7 @@ Planned features for next release:
 
 ---
 
-**Contributors:** zm2231 (primary author)
+**Contributors:** your-username (primary author)
 **License:** MIT
 **Total Commits:** 13 commits across v1.1.0 development
 

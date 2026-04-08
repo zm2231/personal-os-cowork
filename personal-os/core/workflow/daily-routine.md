@@ -148,7 +148,7 @@ Once unlocked, you can ask:
 
 ## Privacy & Data
 
-- All data stored locally in `~/.hermes/personal-os-data/routine/`
+- All data stored locally in `personal-os/data/routine/`
 - No cloud uploads or third-party analytics
 - Data is used solely for personal optimization
 - Export and delete anytime

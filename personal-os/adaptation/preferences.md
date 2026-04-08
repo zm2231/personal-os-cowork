@@ -1,15 +1,14 @@
 # Preferences
-
-*This file stores learned defaults and preferences.*
+*Auto-updated from feedback and session patterns.*
 
 ## Communication
-**Style:** Direct + analytical. No summaries, no preamble, no fluff. Match Zain's pace.
+**Style:** [e.g., direct, brief, no preamble — matches communication-style.md]
 
 ## Morning Agenda
-**Auto-generate:** false (user prefers manual trigger)
+**Auto-generate:** [true / false]
 
 ## Notion
-**Primary workspace:** Big Brain
-**Primary use:** Cadence operations — meeting notes, tasks, client tracking
+**Primary workspace:** [workspace name]
+**Primary use:** [e.g., meeting notes, task management, client tracking]
 
-**Last Updated:** 2026-03-25
+**Last Updated:** [YYYY-MM-DD]

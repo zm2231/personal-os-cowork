@@ -156,7 +156,7 @@ work_files:
 ### Browser Tabs
 browser_tabs:
   - https://github.com/notifications
-  - https://notion.so/zain
+  - https://notion.so/your-workspace
   - https://linear.app/cadence
 
 ### Terminal Sessions

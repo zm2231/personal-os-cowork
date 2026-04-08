@@ -13,7 +13,7 @@
 - Archivable records → knowledge system (Notion, Obsidian)
 - Team-facing outputs → wherever the team lives
 
-Store this in `context/notification-preferences.md` and reference it in every automation template. No automation should have a hardcoded output destination.
+Store this in `context/notifications.md` and reference it in every automation template. No automation should have a hardcoded output destination.
 
 ---
 
@@ -49,14 +49,14 @@ This isn't about gathering data for its own sake — it's about knowing how to b
 
 **Problem:** All generated automations output to a single platform (Notion in this session). This is a design assumption masquerading as a design decision. It creates fragile prompts that break if the user's primary tool changes or if they want a given output somewhere different.
 
-**Fix:** Every automation template should have an explicit `## Output` section populated from the user's `notification-preferences.md`. Structure it as:
+**Fix:** Every automation template should have an explicit `## Output` section populated from the user's `notifications.md`. Structure it as:
 ```
 ## Output
 - Summary → [user's push channel, e.g. Telegram]
 - Archive → [user's knowledge system, e.g. Notion / Obsidian]
 - Team-facing → [user's team channel, e.g. Slack]
 ```
-If `notification-preferences.md` doesn't exist, the automation should prompt the user to define it before proceeding — not default silently.
+If `notifications.md` doesn't exist, the automation should prompt the user to define it before proceeding — not default silently.
 
 ---
 
