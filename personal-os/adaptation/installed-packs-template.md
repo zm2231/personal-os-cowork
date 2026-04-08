@@ -17,11 +17,12 @@ Install by saying "add the [pack name] skills" or reading the pack's INDEX.md.
 |---|---|---|
 | meta-system | skill-suggester, system-check | Everyone |
 
-## To Install a Pack
+## To Add a Community Skill
 
-When user says "add the [pack name] skills":
-1. Read the pack's INDEX.md from skill-packs/[pack-name]/INDEX.md
-2. Append its skill rows to the Skills table in CLAUDE.md
-3. Add pack name + date to the "Currently Installed" table above
+When user shares a skill or says "add this skill":
+1. Save it to `.claude/skills/<name>/SKILL.md`
+2. Verify it has `name:` and `description:` frontmatter
+3. Add the pack name + date to the "Currently Installed" table above
+4. Claude Code auto-discovers it — no further registration needed
 
 **Last Updated:** [date]
