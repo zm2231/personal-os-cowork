@@ -1,74 +1,37 @@
-# PersonalOS for Cowork
+# PersonalOS
 
-A community-shareable personal AI system that learns how you work and adapts over time. Built entirely with Cowork-native patterns—no code, no database, just markdown skills.
-
-**Version:** 1.1.0 (All 6 Phases Complete)  
-**Status:** Production Ready - Full implementation with 25 core skills
+A personal AI system for Claude Code / Cowork that learns how you work and adapts over time. No code, no database — just markdown skills that Claude discovers natively.
 
 ---
 
-## What Is PersonalOS?
+## How It Works
 
-PersonalOS is a personal AI assistant that:
-- Adapts to your work patterns over time
-- Learns your communication style and preferences
-- Automates recurring workflows via skill progression
-- Works across Terminal, Telegram, and Computer Use
-- Requires minimal setup—just install and run onboarding
-
-**Built on Cowork:** Uses Cowork's skills system, frontmatter, and context files—no custom infrastructure.
-
----
-
-## Quick Start
-
-### Installation
+Clone the repo into your Cowork session. Claude reads `CLAUDE.md` on startup, discovers all 87 skills in `.claude/skills/`, and runs onboarding if you're new. Your personal context lives in `personal-os/` and persists across sessions.
 
 ```bash
-# Clone to your Cowork workspace
 git clone https://github.com/zm2231/personal-os-cowork.git
-
-# Or copy to your skills directory
-cp -r personal-os-cowork ~/.cowork/skills/
+cd personal-os-cowork
+# Open in Cowork or Claude Code — say "Set up my PersonalOS"
 ```
 
-### Onboarding (5 minutes)
+---
 
-```
-You: "Set up my PersonalOS"
+## Setup
 
-PersonalOS: "Let's get to know you. I'll ask 5 questions—each takes a minute or two.
-            This helps me adapt to how you work."
+Say **"Set up my PersonalOS"** or **"/onboarding-interview"**.
 
-[Completes 5-question interview]
+The interview takes ~10 minutes and covers:
 
-PersonalOS: "Setup complete! I've learned:
-            ✓ Your role and work context
-            ✓ Your top priorities
-            ✓ Your communication style
-            ✓ Your team and key contacts
-            ✓ Your internal vocabulary
+1. **Who you are** — name, role, company, work description
+2. **Priorities** — top 3 active projects with deadlines
+3. **Communication style** — tone, length, directness
+4. **Team** — key collaborators and how you work together
+5. **Glossary** — internal terms and acronyms
+6. **Output preferences** — where to deliver results (in-conversation, Telegram, Notion, local files)
 
-            I'm starting at autonomy level 1 (Guardian)—I'll confirm actions before executing.
-            As we work together, I'll learn your patterns and level up my skills.
+For technical/engineer/founder roles: additional questions about repos, custom tools, and your decision → implementation workflow.
 
-            Try saying: 'What can you do?' or 'Help me with...'"
-```
-
-### What You Get After Onboarding
-
-**Core Skills Available:**
-- daily-agenda - Morning plan from priorities
-- session-summary - Capture learnings after work
-- draft-email - Style-matched email drafts
-- quick-research - 10-min fact-finding with sources
-- meeting-notes - Structured capture with action items
-- And 20+ more across 6 skill packs
-
-**Personalization:**
-- Identity, communication style, team directory, glossary
-- Current priorities, patterns, learnings
-- Skill levels (L1→L2→L3) and autonomy ladder
+After onboarding, run **`/system-check`** to verify everything is wired up.
 
 ---
 
@@ -76,395 +39,185 @@ PersonalOS: "Setup complete! I've learned:
 
 ```
 personal-os-cowork/
-├── README.md                    # This file
-├── CLAUDE.md                   # Main orchestration
+├── CLAUDE.md                        # System instructions — read on every session start
+├── .claude/
+│   ├── settings.json                # Stop hook — forces session notes before exit
+│   ├── hooks/
+│   │   └── session-notes-check.sh  # Blocks Claude from stopping without writing notes
+│   └── skills/                      # 87 native skills — auto-discovered, /slash-invokable
+│       ├── onboarding-interview/
+│       ├── system-check/
+│       ├── role-detection/
+│       ├── skill-creator/           # Build your own skills (draft/test/eval/architect paths)
+│       ├── daily-agenda/
+│       ├── meeting-notes/
+│       ├── session-summary/
+│       └── ... (81 more)
 │
-├── personal-os/                 # Your personal data (don't edit skills-packs/)
-│   ├── onboarding/             # Interview + role detection
-│   │   ├── interview.md
-│   │   └── role-detection.md
-│   │
-│   ├── context/                # Layer 1: Who you are
-│   │   ├── identity.md              # Created during onboarding
-│   │   ├── communication-style.md    # Created during onboarding
-│   │   ├── working-preferences.md   # Created during onboarding
-│   │   ├── team-directory.md        # Created during onboarding
-│   │   └── glossary.md             # Created during onboarding
-│   │
-│   ├── memory/                 # Layer 2: What matters
-│   │   ├── current-priorities.md    # Created during onboarding
-│   │   ├── patterns.md             # Auto-updates
-│   │   ├── relationships.md        # Auto-updates
-│   │   ├── learnings.md            # Grows over time
-│   │   └── check-ins/             # Weekly/monthly reflections
-│   │
-│   ├── adaptation/             # Layer 3: How it improves
-│   │   ├── skill-levels.md         # Tracks L1/L2/L3 per skill
-│   │   ├── autonomy-level.md        # 4-level ladder state
-│   │   ├── feedback.md             # User corrections
-│   │   ├── preferences.md          # Learned defaults
-│   │   └── auto-emergence.md       # Auto-created workflows
-│   │
-│   └── logs/                   # Session history (optional)
-│
-└── skills/                      # Skills (read-only, don't edit personal-os/)
-    ├── meta-system/           # Foundation
-    ├── personal-management/    # Daily work
-    ├── communication/         # Writing
-    ├── productivity/          # Getting things done
-    ├── research/             # Knowledge work
-    ├── collaboration/         # Team work
-    └── automation/           # Workflow automation
+└── personal-os/                     # Your personal data — populated during onboarding
+    ├── context/                     # Layer 1: Who you are
+    │   ├── identity.md
+    │   ├── communication-style.md
+    │   ├── working-preferences.md
+    │   ├── team-directory.md
+    │   ├── glossary.md
+    │   ├── snapshot.md              # Fast-load summary — auto-rebuilt when stale
+    │   ├── output-format.md         # Obsidian/Notion write format (Dataview, Templater, Tasks)
+    │   └── notifications.md         # Delivery config — gitignored (may contain credentials)
+    ├── memory/                      # Layer 2: What matters
+    │   ├── current-priorities.md
+    │   ├── patterns.md
+    │   ├── decisions.md
+    │   ├── learnings.md
+    │   └── confidence-flags.md
+    ├── adaptation/                  # Layer 3: How it improves
+    │   ├── autonomy-level.md
+    │   ├── skill-levels.md
+    │   ├── feedback.md
+    │   └── preferences.md
+    └── logs/                        # Session notes and meeting logs — gitignored
 ```
 
-**Key Design Principle:**
-- `skills/` = System code (upgrade-safe, versioned)
-- `personal-os/` = Your data (persistent, backed up)
+**Key rule:** `personal-os/` is your data. `.claude/skills/` is the system. Don't mix them.
 
 ---
 
-## Core Features
+## Skills
 
-### 1. Onboarding System
+All 87 skills live in `.claude/skills/<name>/SKILL.md` and are auto-discovered by Claude Code. Invoke any skill with `/skill-name` or describe what you need and Claude routes to the right one.
 
-5-question interview creates your personal context:
-1. **Identity** - Who you are, what you do
-2. **Priorities** - What you're focused on now
-3. **Communication** - How you prefer to interact
-4. **Team** - Who you work with most
-5. **Glossary** - Internal terms and jargon
+### Core (always relevant)
+`/onboarding-interview` `/system-check` `/role-detection` `/session-summary` `/skill-creator` `/scheduled-jobs`
 
-### 2. Skill Index Pattern
+### Daily work
+`/daily-agenda` `/meeting-notes` `/draft-email` `/quick-research` `/standup-bot` `/project-status`
 
-Token-efficient routing maps your requests to best skill:
-```
-You: "What should I focus on today?"
+### Writing & communication
+`/draft-email` `/grammar-check` `/tone-adjuster` `/style-transfer` `/message-review` `/presentation`
 
-PersonalOS: "Use [daily-agenda] for this.
-            Generates prioritized agenda from current priorities."
-```
+### Engineering
+`/code-review` `/debugging` `/git-workflow` `/api-testing` `/documentation-generator` `/ci-cd-helper`
 
-### 3. Three-Layer Memory
+### Research
+`/quick-research` `/fact-checker` `/source-analyzer` `/literature-review` `/data-analysis` `/knowledge-graph`
 
-- **Layer 1: Identity** - Who you are (name, role, style, team, glossary)
-- **Layer 2: Memory** - What matters (priorities, patterns, learnings)
-- **Layer 3: Adaptation** - How it improves (skill levels, autonomy, preferences)
-
-### 4. Skill Progression (L1 → L2 → L3)
-
-```
-Level 1: GUIDED     → Follows process exactly. Asks for confirmation.
-Level 2: CONFIDENT   → Skips unnecessary questions. Applies learned defaults.
-Level 3: ANTICIPATORY → Triggers proactively. Pre-populates from patterns.
-```
-
-Skills level up based on usage + feedback.
-
-### 5. Autonomy Ladder (4 Levels)
-
-```
-Level 1: GUARDIAN   → Confirms ALL actions before executing
-Level 2: SUPERVISED → Confirms risky actions only (deletes, emails)
-Level 3: TRUSTED    → Confirms nothing except destructive ops
-Level 4: AUTONOMOUS → Fully independent (explicit opt-in)
-```
-
-Control with natural language: "Be more autonomous" or "Be more careful"
-
-### 6. Pattern Detection & Auto-Emergence
-
-PersonalOS detects recurring workflows and offers to automate them:
-```
-PersonalOS: "I noticed you do [meeting-notes → session-summary → update-priorities]
-            4x this week. Want me to create a compound skill for this?"
-```
-
----
-
-## Scalability
-
-### Single Instance Architecture
-
-**PersonalOS runs as a single Cowork skill system.** One PersonalOS installation serves all your needs - no multiple instances required.
-
-**How Natural Language Context Switching Works:**
-
-PersonalOS uses Cowork's custom instructions and context awareness to understand your intent:
-
-```
-You: "I need to prep for my 2pm meeting with the team"
-PersonalOS: "I'll use your work context - loading team directory, current priorities, and meeting prep workflow."
-
-You: "Remind me to call mom this evening"
-PersonalOS: "Got it - I'll add this to your personal priorities with a gentle reminder."
-
-You: "I'm studying for my AWS exam next week"
-PersonalOS: "Switching to learning mode - I'll focus your research and study aids on AWS certification."
-```
-
-**No manual commands required** - PersonalOS detects context from your natural language and automatically loads the appropriate identity, priorities, and workflows.
-
-### Work Domains (Context Awareness)
-
-PersonalOS maintains distinct contexts that it switches between automatically:
-
-- **Work** - Professional context, team, projects
-- **Personal** - Life management, health, finances
-- **Learning** - Study goals, courses, research
-- **Creative** - Writing, art, content creation
-
-All contexts are stored in `personal-os/context/` as separate profiles. The agent loads the appropriate context based on your natural language - no manual switching needed.
-
----
-
-## Cowork Integrations
-
-### Telegram
-
-Access PersonalOS from your phone:
-```
-/agenda     → Generate daily agenda
-/summary    → Capture session learnings
-/check      → System health check
-/domain     → Switch work domain
-/skills     → List available skills
-```
-
-Voice messages: Transcribe → Detect intent → Run skill → Text response
-
-### Computer Use
-
-Visual tasks with Cowork's computer use tools:
-- **Screenshot analysis** → Extract text, identify UI elements
-- **GUI automation** → Click buttons, fill forms
-- **Visual debugging** → Find UI issues, accessibility problems
-- **Design feedback** → Review mockups vs style guides
-
-### Plugins (Optional MCP Servers)
-
-Extend with external services:
-- Gmail MCP → Email sync
-- Calendar MCP → Agenda integration
-- Notion MCP → Document storage
-- GitHub MCP → Code review workflows
-
-**Baseline:** Works fully without plugins using Cowork's built-in tools (browser, file system, terminal)
-
----
-
-## Skill Packs
-
-### Meta-System (Foundation)
-- skill-suggester - Intent → skill mapping
-- system-check - Health check + diagnostics
-
-### Personal Management
-- daily-agenda - Morning plan from priorities
-- session-summary - Capture learnings
-- weekly-review - Reflection + planning
-- inbox-zero - Email/task triage
-
-### Communication
-- draft-email - Style-matched emails
-- grammar-check - Grammar and style checking
-- style-transfer - Style adaptation
-- tone-adjuster - Tone modification
-- message-review - Comprehensive pre-send review
-- presentation - Presentation planning and structuring
-
-### Research & Knowledge
-- quick-research - 10-min fact-finding
-- deep-research - Multi-hour investigation
-- source-verify - Cross-check claims
-- citation-manager - Bibliography management
-- fact-checker - Verify claims, cross-check sources
-- source-analyzer - Evaluate source credibility
-- knowledge-graph - Build interconnected knowledge
-- spaced-repetition - Long-term retention optimization
+### Strategy & planning
+`/strategic-planning` `/risk-management` `/stakeholder-communication` `/goal-tracker` `/forecasting`
 
 ### Productivity
-- habit-tracker - Daily habit tracking with streaks
-- goal-tracker - Goal tracking across timeframes
-- journaling - Daily journaling with reflection
-- pomodoro - Focus timer with breaks
-- time-logging - Time tracking with category analysis
+`/habit-tracker` `/pomodoro` `/time-logging` `/journaling` `/handoff-manager`
 
-### Collaboration
-- meeting-notes - Structured capture with action items
-- code-review - Code review with quality checks
-- design-feedback - UI/UX design feedback
-- crm-lite - Customer relationship management
-- standup-bot - Daily standup facilitation
-- project-status - Project progress tracking
-
-### Automation
-- task-automation - Automate repetitive tasks
-- workflow-orchestrator - Orchestrate complex workflows
-- notification-manager - Manage notifications and alerts
-- data-sync - Synchronize data, manage backups
-- scheduled-jobs - Schedule recurring tasks
+Browse all: `/skill-suggester` — describe what you need and get matched to the right skill.
 
 ---
 
-## Implementation Status
+## Memory System
 
-### Phase 1: Foundation Complete
-- File structure
-- CLAUDE.md orchestration
-- Onboarding system (5-question interview)
-- Meta-system skills (skill-suggester, system-check)
-- Core identity files
+Three layers, all markdown files:
 
-### Phase 2: Workflow Learning Complete
-- Shortcuts skill (session 10+ unlock)
-- Daily Routine skill (session 5+ unlock)
-- Pattern Detection skill (automatic weekly)
-- Telegram integration skill (always active)
-- Session tracking templates
+| Layer | Location | What's stored |
+|-------|----------|---------------|
+| **Identity** | `personal-os/context/` | Who you are, your team, your style, your tools |
+| **Memory** | `personal-os/memory/` | Priorities, decisions, patterns, learnings |
+| **Adaptation** | `personal-os/adaptation/` | Autonomy level, feedback, learned preferences |
 
-### Phase 3: Computer Use Complete
-- Computer Use integration skill
-- Basic computer use (session 6+ unlock)
-- Advanced computer use (session 21+ unlock)
-- Workflow templates (daily-setup, downloads-organizer, form-filler)
+**Automatic capture:**
 
-### Phase 4: Advanced Learning Complete
-- Self-Correction skill (session 15+ unlock)
-- Recommendations skill (session 20+ unlock)
-- Optimization skill (session 25+ unlock)
-- Progressive unlock system (10 levels)
+| Trigger | Updated |
+|---------|---------|
+| New person mentioned with role | `context/team-directory.md` (silent) |
+| Unknown term explained | `context/glossary.md` (silent) |
+| "We decided X" | `memory/decisions.md` — "Logged." |
+| Style correction received | `context/communication-style.md` — "Updated." |
+| Pattern seen 3+ times | `memory/patterns.md` — "I noticed a pattern…" |
 
-### Phase 5: Community Share Complete
-- Comprehensive installation guide (INSTALL.md)
-- Contribution guidelines (CONTRIBUTING.md)
-- Packaging documentation (PACKAGING.md)
-- Ready for public GitHub release
-
-### Phase 6: Automation Complete
-- 5 automation skills (task-automation, workflow-orchestrator, notification-manager, data-sync, scheduled-jobs)
-- Session unlocks (session 14+)
-- Full integration with all other skill packs
-
-**Total Implementation:** 25 core skills across 6 phases + comprehensive documentation
+**Snapshot:** `context/snapshot.md` is a fast-load summary. Claude checks if it's stale on session start and rebuilds it if any source file is newer.
 
 ---
 
-## Comparison to Other Systems
+## Autonomy Ladder
 
-| Aspect | ClaudeClaw | PAI | Sidekick | PersonalOS for Cowork |
-|--------|------------|-----|----------|-------------------------|
-| **Runtime** | Node.js + SQLite | TypeScript + Hooks | Markdown only | Markdown + Cowork Skills |
-| **Memory** | SQLite database | Three-tier (hot/warm/cold) | Markdown files | Progressive memory files |
-| **Adaptation** | Agent specialization | Continuous learning | Skill progression | Context-aware routing |
-| **Onboarding** | Manual setup | AI-based installation | 5-question interview | Guided + role detection |
-| **Complexity** | High (code, DB, services) | Very high (infra) | Medium | Low (Cowork-native) |
-| **Shareability** | Partial (needs code) | Low (complex infra) | High | High (skills + docs) |
+Set in `personal-os/adaptation/autonomy-level.md`. Change anytime: *"be more autonomous"* or *"be more careful"*.
 
-**What Makes PersonalOS Different:**
-1. **Cowork-Native:** Uses Cowork's skills system, frontmatter, and context files
-2. **No Code Required:** Pure markdown, no Node.js or TypeScript
-3. **Progressive Disclosure:** Starts minimal, adds complexity as patterns emerge
-4. **Community Shareable:** Easy to install, customize, and contribute
-5. **Multi-Instance Support:** Run separate instances for work/personal/learning contexts
-6. **Work Domain Switching:** Context switching between different life domains
+| Level | Name | Behavior |
+|-------|------|----------|
+| L1 | Guardian | Confirms ALL actions before executing |
+| L2 | Supervised | Confirms risky actions; executes reads/research directly |
+| L3 | Trusted | Works autonomously; presents output for review before sending |
+| L4 | Anticipatory | Pre-populates everything; approval gates always apply |
+
+Default: **L1** for most users. **L2** for engineers/developers. **L3** for AI/agent developers (auto-detected during onboarding from signals like "MCP", "agents", "built my own").
 
 ---
 
-## Known Limitations
+## Session Notes
 
-### Semantic Search
-PersonalOS currently uses Cowork's built-in context loading for document retrieval. For advanced semantic search (similar to Khoj), you can:
+A Stop hook (`.claude/hooks/session-notes-check.sh`) prevents Claude from ending a session without writing notes to `personal-os/logs/sessions/YYYY-MM-DD-[topic].md`. This is how the system learns over time — notes feed into the weekly reflection scheduled task.
 
-1. **Use Cowork's context search:** Cowork provides semantic search over loaded documents
-2. **Add MCP plugins:** Notion MCP, Obsidian MCP for advanced search
-3. **Future Enhancement:** We plan to add a dedicated semantic-search skill in v1.2.0
-
-**Current Workaround:**
-```
-You: "Search my notes for 'project planning'"
-PersonalOS: Uses Cowork's semantic search over your personal-os/memory/ files
-```
+To write notes manually: `/session-summary`
 
 ---
 
-## Troubleshooting
+## Scheduled Tasks
 
-### "Skills don't trigger"
+Use **Claude Desktop → Schedule tab** for always-on recurring tasks. Each task is a self-contained prompt that runs in a fresh session.
 
-**Cause:** CLAUDE.md not loaded or Skills table missing
+Included templates in `/scheduled-jobs`:
+- **Daily morning briefing** — reads priorities + decisions, delivers today's focus
+- **Friday weekly summary** — reads session logs, surfaces patterns
+- **Reflection pass** — extracts learnings from logs, updates `memory/learnings.md`
 
-**Fix:**
-1. Ensure CLAUDE.md is in your Cowork context
-2. Check Skills table has entries with descriptions including "Trigger when:"
-3. Run `system-check` skill for diagnostics
+Tasks read delivery preferences from `personal-os/context/notifications.md` — never hardcode a Telegram ID or Notion page in a prompt.
 
-### "Onboarding didn't create files"
+---
 
-**Cause:** File permissions or path issues
+## Obsidian / Notion Output
 
-**Fix:**
-```bash
-# Verify directory structure
-ls -la personal-os/personal-os/context/
+When you have Obsidian or Notion set up, `personal-os/context/output-format.md` defines exactly how Claude writes to each:
 
-# Re-run onboarding
-You: "Set up my PersonalOS"
-```
+**Obsidian:** frontmatter schema, file naming (`YYYY-MM-DD-[type]-[slug].md`), plugin compatibility (Dataview fields, Templater workflow, Tasks plugin emoji syntax)
 
-### "Skill doesn't remember my preferences"
+**Notion:** MCP tool sequence (`notion_from_title` → `notion_append_markdown`), page structure, "always nest under parent page" rule
 
-**Cause:** Memory files not loaded or skill-levels.md missing
+Fill in the config sections during onboarding or edit directly.
 
-**Fix:**
-1. Check `personal-os/context/` files exist (created in onboarding)
-2. Verify `personal-os/adaptation/skill-levels.md` exists
-3. Run `system-check` to verify all files
+---
 
-### "Multiple instances conflict"
+## Building Custom Skills
 
-**Cause:** Both instances loaded simultaneously in same Cowork context
+Use `/skill-creator` to build skills for your specific workflows — your LMS, your internal tools, your domain. Paths:
 
-**Fix:**
-1. Use Cowork's context switching to specify which instance
-2. Or install in separate Cowork workspaces
+- **Draft only** — get a working `SKILL.md` fast
+- **Draft + test** — verify with 2–3 test cases
+- **Full eval** — grader/comparator/analyzer subagents, baseline comparisons
+- **Architect** — for creative/generative output (generate → grade → extract patterns → iterate)
+
+Custom skills go in `.claude/skills/<name>/SKILL.md` and are immediately active.
+
+---
+
+## Gitignored Files
+
+These files contain personal data and are not committed:
+
+- `personal-os/context/notifications.md` — may contain Telegram token, Notion credentials
+- `personal-os/logs/sessions/` — session notes with personal context
+- `.obsidian/` — vault layout config
 
 ---
 
 ## Contributing
 
-PersonalOS is open source. We welcome contributions!
+PersonalOS is open source. Skills are plain markdown — fork, build, share.
 
-**How to Contribute:**
-1. Add skills to existing packs or create new packs
-2. Follow Cowork frontmatter format (see `CLAUDE.md` appendix)
-3. Include skill-level modifiers (L1/L2/L3 behavior)
-4. Add "After This Skill" section for chaining
-5. Update this README with new skills
-
-**See Also:**
-- Architecture Design: `research/personal-os-synthesis/phase3-architecture-design.md`
-- Sidekick Analysis: `research/sidekick-analysis/phase2-sidekick-deep-dive.md`
-- Cowork Capabilities: `research/cowork-research/phase1-cowork-capabilities.md`
+To add a skill: create `.claude/skills/<your-skill>/SKILL.md` with `name:` and `description:` frontmatter. Use `/skill-creator` for guidance on structure, testing, and description optimization.
 
 ---
 
 ## License
 
-MIT License - See LICENSE file for details
+MIT — see `LICENSE` file.
 
 ---
 
-## Acknowledgments
-
-PersonalOS for Cowork synthesizes patterns from:
-- **Sidekick** - 3-layer architecture, onboarding interview, skill progression
-- **PAI** - Continuous learning, feedback loops, multi-tier memory
-- **ClaudeClaw** - Agent specialization, Telegram integration, file-based config
-
-Built on **Claude Cowork** - Skills system, frontmatter, context files, Telegram, computer use
-
----
-
-**Current Status:** All 6 Phases Complete - Production Ready
-**Implementation:** 25 core skills across 6 phases + comprehensive documentation
-**Repository:** https://github.com/zm2231/personal-os-cowork
+*Built on Claude Code / Cowork — native skills, file-based memory, real scheduling.*
