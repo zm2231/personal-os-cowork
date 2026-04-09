@@ -177,18 +177,46 @@ If they choose Notion: "What's the name of the page or database where you want o
 
 If they choose Telegram:
 ```
-"To set up Telegram push notifications:
+"Telegram uses a native plugin — here's the setup (takes ~5 minutes):
 
-1. Open Telegram → search for @BotFather → start a chat
-2. Send: /newbot
-3. Follow the prompts (give it a name and username)
-4. BotFather gives you a bot token — save it
-5. Open your new bot and send it any message
-6. Visit: https://api.telegram.org/bot[YOUR_TOKEN]/getUpdates
-7. Find your chat_id in the response
+1. Get a bot token: open @BotFather on Telegram → /newbot → follow prompts → copy the token
+2. In your Claude Code session:
+   /plugin install telegram@claude-plugins-official
+   /reload-plugins
+   /telegram:configure YOUR_TOKEN_HERE
+3. Restart with the channel flag:
+   claude --channels plugin:telegram@claude-plugins-official
+4. DM your bot — it gives you a 6-character pairing code
+5. In Claude: /telegram:access pair <code>
+6. Lock it down: /telegram:access policy allowlist
 
-Then share the token and chat ID here and I'll save them to notifications.md
-(that file is gitignored — it stays local and never gets committed)."
+Full reference: personal-os/core/integration/plugins-reference.md"
+```
+
+If they choose iMessage (macOS only):
+```
+"iMessage uses a native plugin — requires macOS and Full Disk Access:
+
+1. System Settings → Privacy & Security → Full Disk Access → add your terminal
+2. In your Claude Code session:
+   /plugin install imessage@claude-plugins-official
+3. Restart with the channel flag:
+   claude --channels plugin:imessage@claude-plugins-official
+4. iMessage yourself to test — self-chat always gets through
+5. Allow others: /imessage:access allow +15551234567
+
+Full reference: personal-os/core/integration/plugins-reference.md"
+```
+
+If they choose Slack:
+```
+"Slack uses a native plugin with OAuth:
+
+1. In your Claude Code session:
+   /plugin install slack@claude-plugins-official
+2. Complete the OAuth flow in your browser — sign into your workspace
+
+Full reference: personal-os/core/integration/plugins-reference.md"
 ```
 
 If they have Obsidian mounted: Ask the vault check questions (see Local Vault section below) now rather than waiting.

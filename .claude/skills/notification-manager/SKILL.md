@@ -42,31 +42,43 @@ Save workspace name and parent page to `notifications.md`.
 
 ### Telegram (push to phone)
 
-If not yet configured, walk through full setup:
+Telegram uses the official Claude plugin. Read `personal-os/core/integration/plugins-reference.md` for full setup.
 
+If not yet installed, walk through:
 ```
-"To get push notifications on your phone via Telegram:
+"Telegram setup (5 min):
 
-1. Open Telegram → search @BotFather → /start
-2. Send: /newbot
-3. Follow prompts → get your bot token
-4. Open your new bot and send any message
-5. Go to: https://api.telegram.org/bot[TOKEN]/getUpdates
-6. Find your chat_id in the JSON response
+1. Get a token: open @BotFather → /newbot → copy the token
+2. In Claude Code:
+   /plugin install telegram@claude-plugins-official
+   /reload-plugins
+   /telegram:configure YOUR_TOKEN
+3. Restart: claude --channels plugin:telegram@claude-plugins-official
+4. DM your bot → get pairing code → /telegram:access pair <code>
+5. /telegram:access policy allowlist
 
-Share your token and chat ID — I'll save them to notifications.md.
-That file is gitignored, so credentials stay local."
-```
-
-After receiving credentials, save to `notifications.md` and send a test message:
-```bash
-curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
-  -d "chat_id=${CHAT_ID}" \
-  -d "text=PersonalOS connected ✓" \
-  -d "parse_mode=Markdown"
+Once connected, I'll send output there automatically."
 ```
 
-Confirm delivery before finishing.
+After setup, log in `notifications.md` that Telegram is configured. No token storage needed — the plugin handles credentials at `~/.claude/channels/telegram/.env`.
+
+### iMessage (macOS only)
+
+```
+"iMessage setup:
+
+1. System Settings → Privacy & Security → Full Disk Access → add your terminal
+2. /plugin install imessage@claude-plugins-official
+3. Restart: claude --channels plugin:imessage@claude-plugins-official
+4. iMessage yourself to verify"
+```
+
+### Slack
+
+```
+"/plugin install slack@claude-plugins-official
+Complete OAuth in browser — done."
+```
 
 ### Per-type routing
 
