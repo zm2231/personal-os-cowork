@@ -16,7 +16,7 @@ and are auto-discovered — no registration, no install step, no session unlock 
 - Autonomy ladder: L1 Guardian → L2 Supervised → L3 Trusted → L4 Anticipatory
 - Skill-creator with eval loop (draft / draft+test / full eval / architect paths)
 - Voice-style template (generic; personalizes via `personal-os/context/voice-profile.md`)
-- 88 skills across: daily work, writing, engineering, research, strategy, productivity
+- 83 skills across: daily work, writing, engineering, research, strategy, productivity
 
 **Architecture:**
 

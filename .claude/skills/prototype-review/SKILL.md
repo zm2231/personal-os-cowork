@@ -10,7 +10,7 @@ Provide comprehensive, actionable design feedback on prototypes, wireframes, and
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 16+)
+### 🎯 Tier 1: Foundation
 **Basic Design Review**
 
 Provide essential design feedback on prototypes and mockups:
@@ -38,7 +38,7 @@ Provide essential design feedback on prototypes and mockups:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 16+)
+### 🚀 Tier 2: Advanced
 **Comprehensive Design Analysis**
 
 Deep dive into design quality and user experience:
@@ -67,7 +67,7 @@ Deep dive into design quality and user experience:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 16+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Design Leadership**
 
 Lead design strategy and drive design excellence across products:

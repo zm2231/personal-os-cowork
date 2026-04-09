@@ -9,7 +9,7 @@ Generate, qualify, and nurture leads through systematic outbound and inbound str
 
 ## Progressive Disclosure Tiers
 
-### Level 1: Foundation (Available Session 24+)
+### Level 1: Foundation
 
 #### Core Capabilities
 - **Outbound Outreach**: Research prospects, personalize outreach, execute multi-touch sequences
@@ -51,7 +51,7 @@ Generate, qualify, and nurture leads through systematic outbound and inbound str
 
 ---
 
-### Level 2: Advanced (Available Session 24+)
+### Level 2: Advanced
 
 #### Core Capabilities
 - **Advanced Lead Scoring**: Use predictive models, behavioral scoring, intent signals
@@ -93,7 +93,7 @@ Generate, qualify, and nurture leads through systematic outbound and inbound str
 
 ---
 
-### Level 3: Strategic (Available Session 24+)
+### Level 3: Strategic
 
 #### Core Capabilities
 - **Predictive Demand Generation**: Forecast lead pipeline, identify gaps, allocate resources proactively
@@ -142,10 +142,6 @@ This skill integrates with:
 - **Account Management**: Hand off accounts post-sale for upselling and retention
 - **Sales Enablement**: Use sales enablement content in nurturing and outreach
 - **Forecasting**: Provide lead pipeline data for revenue forecasting
-
-## Session Unlock Requirements
-
-This skill requires Session 24+.
 
 ## Examples
 

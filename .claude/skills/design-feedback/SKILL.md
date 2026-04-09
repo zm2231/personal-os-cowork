@@ -29,8 +29,6 @@ Provide comprehensive, constructive design feedback for UI/UX designs, graphics,
 
 ## Tier 1: Guided Review (Beginner)
 
-**Session Unlock:** Session 14+
-
 ### Design Review Checklist
 
 #### 1. Visual Hierarchy & Layout
@@ -100,8 +98,6 @@ Provide comprehensive, constructive design feedback for UI/UX designs, graphics,
 ---
 
 ## Tier 2: Confident Review (Intermediate)
-
-**Session Unlock:** Session 16+
 
 ### Advanced Design Analysis
 
@@ -200,8 +196,6 @@ content_accessibility:
 ---
 
 ## Tier 3: Anticipatory Review (Advanced)
-
-**Session Unlock:** Session 20+
 
 ### Proactive Design Review
 

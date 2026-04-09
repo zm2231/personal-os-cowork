@@ -9,7 +9,7 @@ Manage customer relationships post-sale, ensure success, and drive expansion thr
 
 ## Progressive Disclosure Tiers
 
-### Level 1: Foundation (Available Session 24+)
+### Level 1: Foundation
 
 #### Core Capabilities
 - **Onboarding Management**: Guide customers through implementation, ensure adoption milestones achieved, reduce time-to-value
@@ -51,7 +51,7 @@ Manage customer relationships post-sale, ensure success, and drive expansion thr
 
 ---
 
-### Level 2: Advanced (Available Session 24+)
+### Level 2: Advanced
 
 #### Core Capabilities
 - **Strategic Account Planning**: Develop multi-year account plans, identify expansion opportunities, align with customer strategy
@@ -93,7 +93,7 @@ Manage customer relationships post-sale, ensure success, and drive expansion thr
 
 ---
 
-### Level 3: Strategic (Available Session 24+)
+### Level 3: Strategic
 
 #### Core Capabilities
 - **Executive Relationship Management**: Build C-level relationships, influence customer strategy, become strategic partner
@@ -141,10 +141,6 @@ This skill integrates with:
 - **Pipeline Management**: Expansion opportunities create new pipeline
 - **Sales Enablement**: Use enablement content in QBRs and customer meetings
 - **Forecasting**: Expansion opportunities and retention rates feed into forecasting
-
-## Session Unlock Requirements
-
-This skill requires Session 24+.
 
 ## Examples
 

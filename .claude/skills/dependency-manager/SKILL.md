@@ -7,7 +7,7 @@ description: "Dependency updates, vulnerability scanning, and version management
 
 Systematic dependency management including updates, vulnerability scanning, and version control.
 
-## Tier 1: Guided Dependency Management (Session 15+)
+## Tier 1: Guided Dependency Management
 
 ### What This Skill Does
 
@@ -254,7 +254,7 @@ pytest tests/integration/
 
 ---
 
-## Tier 2: Confident Dependency Management (Session 16+)
+## Tier 2: Confident Dependency Management
 
 ### Advanced Dependency Techniques
 
@@ -489,7 +489,7 @@ strict-peer-dependencies=false
 
 ---
 
-## Tier 3: Anticipatory Dependency Management (Session 17+)
+## Tier 3: Anticipatory Dependency Management
 
 ### Proactive Dependency Strategies
 

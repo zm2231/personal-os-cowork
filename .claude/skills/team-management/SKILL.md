@@ -10,7 +10,7 @@ Lead, grow, and optimize high-performing teams by implementing effective people 
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 21+)
+### 🎯 Tier 1: Foundation
 **Team Fundamentals & Onboarding**
 
 Build and support effective team foundations:
@@ -34,7 +34,7 @@ Build and support effective team foundations:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 21+)
+### 🚀 Tier 2: Advanced
 **Team Growth & Performance Optimization**
 
 Lead team development and optimize performance:
@@ -60,7 +60,7 @@ Lead team development and optimize performance:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 21+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Team Leadership**
 
 Drive organizational impact through exceptional team leadership:

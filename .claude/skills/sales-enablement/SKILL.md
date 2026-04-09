@@ -9,7 +9,7 @@ Equip sales teams with content, tools, and training to sell more effectively and
 
 ## Progressive Disclosure Tiers
 
-### Level 1: Foundation (Available Session 24+)
+### Level 1: Foundation
 
 #### Core Capabilities
 - **Content Management**: Create and organize sales content (pitch decks, case studies, whitepapers, battle cards)
@@ -52,7 +52,7 @@ Equip sales teams with content, tools, and training to sell more effectively and
 
 ---
 
-### Level 2: Advanced (Available Session 24+)
+### Level 2: Advanced
 
 #### Core Capabilities
 - **Sales Playbooks**: Develop stage-based playbooks, automated workflows, best practices guides
@@ -95,7 +95,7 @@ Equip sales teams with content, tools, and training to sell more effectively and
 
 ---
 
-### Level 3: Strategic (Available Session 24+)
+### Level 3: Strategic
 
 #### Core Capabilities
 - **Sales Enablement Strategy**: Develop comprehensive enablement strategy aligned with business objectives
@@ -145,10 +145,6 @@ This skill integrates with:
 - **Deal Closing**: Competitive battle cards and objection handling content
 - **Account Management**: QBR templates and customer success stories
 - **Lead Generation**: Content for outreach and nurturing
-
-## Session Unlock Requirements
-
-This skill requires Session 24+.
 
 ## Examples
 

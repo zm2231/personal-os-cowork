@@ -7,7 +7,7 @@ description: "Auto-generate technical documentation, README files, and API docum
 
 Automated generation of technical documentation, README files, API documentation, and code comments.
 
-## Tier 1: Guided Documentation (Session 15+)
+## Tier 1: Guided Documentation
 
 ### What This Skill Does
 
@@ -212,7 +212,7 @@ jobs:
 
 ---
 
-## Tier 2: Confident Documentation (Session 16+)
+## Tier 2: Confident Documentation
 
 ### Advanced Documentation Techniques
 
@@ -480,7 +480,7 @@ def create_doc_index():
 
 ---
 
-## Tier 3: Anticipatory Documentation (Session 17+)
+## Tier 3: Anticipatory Documentation
 
 ### Proactive Documentation Strategies
 

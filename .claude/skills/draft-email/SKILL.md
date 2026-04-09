@@ -42,8 +42,6 @@ The Draft Email skill helps you:
 
 ## Tier 1: Core Email Drafting
 
-**Unlock:** Session 3
-
 ### Capabilities
 
 **Email Drafting by Scenario:**
@@ -349,8 +347,6 @@ Review before sending:
 
 ## Tier 2: Advanced Tone & Style Adjustment
 
-**Unlock:** Session 8
-
 ### Additional Capabilities
 
 **Audience Analysis:**
@@ -529,8 +525,6 @@ Improvements made:
 - Fix: Learn from your email patterns and replicate success
 
 ## Tier 3: Learning & Strategic Communication
-
-**Unlock:** Session 13
 
 ### Expert Capabilities
 

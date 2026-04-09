@@ -10,7 +10,7 @@ Plan, track, and optimize budgets effectively to maximize value, ensure financia
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 21+)
+### 🎯 Tier 1: Foundation
 **Budget Management Fundamentals**
 
 Implement basic budget management practices:
@@ -34,7 +34,7 @@ Implement basic budget management practices:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 21+)
+### 🚀 Tier 2: Advanced
 **Comprehensive Financial Management**
 
 Implement comprehensive financial management processes:
@@ -63,7 +63,7 @@ Implement comprehensive financial management processes:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 21+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Financial Leadership**
 
 Drive financial strategy and organizational financial health:

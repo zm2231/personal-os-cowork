@@ -10,7 +10,7 @@ Conduct user research, usability testing, and gather insights to inform design d
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 16+)
+### 🎯 Tier 1: Foundation
 **Basic User Research**
 
 Conduct foundational user research and usability testing:
@@ -37,7 +37,7 @@ Conduct foundational user research and usability testing:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 16+)
+### 🚀 Tier 2: Advanced
 **Advanced Research Methodologies**
 
 Apply sophisticated research methodologies and analysis:
@@ -66,7 +66,7 @@ Apply sophisticated research methodologies and analysis:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 16+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Research Leadership**
 
 Lead research strategy and establish research-driven design culture:

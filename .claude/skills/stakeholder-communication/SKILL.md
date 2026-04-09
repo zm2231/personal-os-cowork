@@ -10,7 +10,7 @@ Manage communication with stakeholders effectively to build alignment, trust, an
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 21+)
+### 🎯 Tier 1: Foundation
 **Stakeholder Communication Fundamentals**
 
 Establish effective communication with key stakeholders:
@@ -34,7 +34,7 @@ Establish effective communication with key stakeholders:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 21+)
+### 🚀 Tier 2: Advanced
 **Strategic Stakeholder Management**
 
 Develop comprehensive stakeholder management strategies:
@@ -61,7 +61,7 @@ Develop comprehensive stakeholder management strategies:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 21+)
+### 🌟 Tier 3: Anticipatory
 **Executive Presence & Organizational Influence**
 
 Drive organizational alignment through exceptional stakeholder management:

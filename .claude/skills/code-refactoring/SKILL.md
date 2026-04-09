@@ -7,7 +7,7 @@ description: "Code quality improvement, technical debt reduction, and refactorin
 
 Systematic approaches to improving code quality, reducing technical debt, and maintaining software maintainability.
 
-## Tier 1: Guided Refactoring (Session 15+)
+## Tier 1: Guided Refactoring
 
 ### What This Skill Does
 
@@ -218,7 +218,7 @@ Move related methods and variables to a new class.
 
 ---
 
-## Tier 2: Confident Refactoring (Session 16+)
+## Tier 2: Confident Refactoring
 
 ### Advanced Refactoring Techniques
 
@@ -431,7 +431,7 @@ eslint "**/*.js"
 
 ---
 
-## Tier 3: Anticipatory Refactoring (Session 17+)
+## Tier 3: Anticipatory Refactoring
 
 ### Proactive Refactoring Strategies
 

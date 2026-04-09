@@ -10,7 +10,7 @@ Identify, assess, and mitigate risks proactively to ensure project and organizat
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 21+)
+### 🎯 Tier 1: Foundation
 **Risk Management Fundamentals**
 
 Implement basic risk management practices:
@@ -34,7 +34,7 @@ Implement basic risk management practices:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 21+)
+### 🚀 Tier 2: Advanced
 **Comprehensive Risk Framework**
 
 Implement comprehensive risk management across the organization:
@@ -63,7 +63,7 @@ Implement comprehensive risk management across the organization:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 21+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Risk Leadership**
 
 Drive organizational risk strategy and resilience:

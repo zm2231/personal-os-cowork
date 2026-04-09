@@ -10,7 +10,7 @@ Generate comprehensive, living style guides and design documentation from design
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 16+)
+### 🎯 Tier 1: Foundation
 **Basic Style Guide Creation**
 
 Create foundational style guides from design systems and prototypes:
@@ -37,7 +37,7 @@ Create foundational style guides from design systems and prototypes:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 16+)
+### 🚀 Tier 2: Advanced
 **Comprehensive Documentation System**
 
 Build a living documentation system for design and development:
@@ -66,7 +66,7 @@ Build a living documentation system for design and development:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 16+)
+### 🌟 Tier 3: Anticipatory
 **Design Documentation Ecosystem**
 
 Build a comprehensive design documentation ecosystem and governance model:

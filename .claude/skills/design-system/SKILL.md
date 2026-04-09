@@ -10,7 +10,7 @@ Create, maintain, and evolve comprehensive design systems that ensure visual con
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 16+)
+### 🎯 Tier 1: Foundation
 **Design System Setup & Documentation**
 
 Create foundational design system documentation and component libraries:
@@ -33,7 +33,7 @@ Create foundational design system documentation and component libraries:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 16+)
+### 🚀 Tier 2: Advanced
 **Design System Management & Evolution**
 
 Expand and manage a mature design system:
@@ -58,7 +58,7 @@ Expand and manage a mature design system:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 16+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Design System Leadership**
 
 Lead design system strategy and enable team autonomy:

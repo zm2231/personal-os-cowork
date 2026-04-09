@@ -7,7 +7,7 @@ description: "CI/CD pipeline optimization, build failures, and deployment automa
 
 CI/CD pipeline optimization, build failures, and deployment automation strategies.
 
-## Tier 1: Guided CI/CD (Session 15+)
+## Tier 1: Guided CI/CD
 
 ### What This Skill Does
 
@@ -111,7 +111,7 @@ docker exec -it <container-id> bash
 
 ---
 
-## Tier 2: Confident CI/CD (Session 16+)
+## Tier 2: Confident CI/CD
 
 ### Advanced Techniques
 
@@ -152,7 +152,7 @@ strategy:
 
 ---
 
-## Tier 3: Anticipatory CI/CD (Session 17+)
+## Tier 3: Anticipatory CI/CD
 
 ### Proactive Strategies
 

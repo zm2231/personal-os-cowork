@@ -29,8 +29,6 @@ Lightweight customer relationship management for tracking contacts, deals, and i
 
 ## Tier 1: Guided Tracking (Beginner)
 
-**Session Unlock:** Session 14+
-
 ### Contact Management
 
 #### Add New Contact
@@ -187,7 +185,6 @@ Set follow-up reminder:
 
 ## Tier 2: Confident Management (Intermediate)
 
-**Session Unlock:** Stage 16+
 
 ### Advanced Contact Management
 
@@ -420,8 +417,6 @@ def auto_generate_follow_ups():
 ---
 
 ## Tier 3: Anticipatory Management (Advanced)
-
-**Session Unlock:** Session 20+
 
 ### Predictive Analytics
 

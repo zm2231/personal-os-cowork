@@ -7,7 +7,7 @@ description: "API endpoint testing, mocking, and integration testing for robust 
 
 Comprehensive API testing strategies including endpoint testing, mocking, and integration testing.
 
-## Tier 1: Guided API Testing (Session 15+)
+## Tier 1: Guided API Testing
 
 ### What This Skill Does
 
@@ -275,7 +275,7 @@ def test_get_user_contract():
 
 ---
 
-## Tier 2: Confident API Testing (Session 16+)
+## Tier 2: Confident API Testing
 
 ### Advanced API Testing Techniques
 
@@ -563,7 +563,7 @@ def test_user():
 
 ---
 
-## Tier 3: Anticipatory API Testing (Session 17+)
+## Tier 3: Anticipatory API Testing
 
 ### Proactive API Testing Strategies
 

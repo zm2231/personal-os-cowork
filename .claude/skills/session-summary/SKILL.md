@@ -42,8 +42,6 @@ The Session Summary skill helps you:
 
 ## Tier 1: Session Capture & Summarization
 
-**Unlock:** Session 2
-
 ### Capabilities
 
 **Manual Summary Generation:**
@@ -249,8 +247,6 @@ Medium Priority: 2
 
 ## Tier 2: Advanced Analysis & Cross-Reference
 
-**Unlock:** Session 6
-
 ### Additional Capabilities
 
 **Pattern Analysis:**
@@ -439,8 +435,6 @@ JSON saved to: personal-os/logs/summaries/ses-20240327-personal-os-v1.1.0.json
 - Fix: Store in central location, use consistent file naming, enable search
 
 ## Tier 3: Auto-Summarization & Knowledge Integration
-
-**Unlock:** Session 11
 
 ### Expert Capabilities
 

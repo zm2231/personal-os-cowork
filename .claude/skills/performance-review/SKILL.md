@@ -10,7 +10,7 @@ Conduct structured, fair, and impactful performance reviews that drive team memb
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 21+)
+### 🎯 Tier 1: Foundation
 **Performance Review Fundamentals**
 
 Implement basic performance review processes:
@@ -34,7 +34,7 @@ Implement basic performance review processes:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 21+)
+### 🚀 Tier 2: Advanced
 **Comprehensive Performance Management**
 
 Implement comprehensive performance management practices:
@@ -61,7 +61,7 @@ Implement comprehensive performance management practices:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 21+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Performance Architecture**
 
 Design performance systems that drive organizational excellence:

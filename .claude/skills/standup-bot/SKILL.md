@@ -29,8 +29,6 @@ Automated daily standup facilitation for remote and distributed teams. Capture u
 
 ## Tier 1: Guided Standup (Beginner)
 
-**Session Unlock:** Session 14+
-
 ### Individual Standup
 
 #### Capture Your Update
@@ -120,8 +118,6 @@ Compile team standups into summary:
 ---
 
 ## Tier 2: Confident Facilitation (Intermediate)
-
-**Session Unlock:** Session 16+
 
 ### Structured Standup Format
 
@@ -279,8 +275,6 @@ def send_standup_reminders(team_members):
 ---
 
 ## Tier 3: Anticipatory Coordination (Advanced)
-
-**Session Unlock:** Session 20+
 
 ### Standup Analytics
 

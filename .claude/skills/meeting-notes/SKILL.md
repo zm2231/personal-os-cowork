@@ -42,8 +42,6 @@ The Meeting Notes skill helps you:
 
 ## Tier 1: Note Capture & Organization
 
-**Unlock:** Session 5
-
 ### Capabilities
 
 **Live Note Capture:**
@@ -344,8 +342,6 @@ Summary delivered in 267 words.
 
 ## Tier 2: Advanced Structure & Integration
 
-**Unlock:** Session 10
-
 ### Additional Capabilities
 
 **Auto-Structure by Speaker:**
@@ -610,8 +606,6 @@ All meetings linked in knowledge graph for easy navigation.
 - Fix: Auto-share via calendar integration
 
 ## Tier 3: Real-Time AI & Predictive Analysis
-
-**Unlock:** Session 14
 
 ### Expert Capabilities
 

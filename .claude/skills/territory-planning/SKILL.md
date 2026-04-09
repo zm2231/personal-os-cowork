@@ -9,7 +9,7 @@ Design and optimize sales territories, assign quotas, and maximize territory pro
 
 ## Progressive Disclosure Tiers
 
-### Level 1: Foundation (Available Session 24+)
+### Level 1: Foundation
 
 #### Core Capabilities
 - **Territory Design**: Define territories based on geography, industry, or customer segment
@@ -52,7 +52,7 @@ Design and optimize sales territories, assign quotas, and maximize territory pro
 
 ---
 
-### Level 2: Advanced (Available Session 24+)
+### Level 2: Advanced
 
 #### Core Capabilities
 - **Data-Driven Territory Optimization**: Use analytics to optimize territory boundaries and assignments
@@ -95,7 +95,7 @@ Design and optimize sales territories, assign quotas, and maximize territory pro
 
 ---
 
-### Level 3: Strategic (Available Session 24+)
+### Level 3: Strategic
 
 #### Core Capabilities
 - **AI-Powered Territory Optimization**: Use machine learning to optimize territory boundaries and assignments
@@ -145,10 +145,6 @@ This skill integrates with:
 - **Account Management**: Account assignments map to territories
 - **Forecasting**: Territory quotas and potential feed into forecasting
 - **Lead Generation**: Territory target accounts inform lead generation
-
-## Session Unlock Requirements
-
-This skill requires Session 24+.
 
 ## Examples
 

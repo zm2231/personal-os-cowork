@@ -7,7 +7,7 @@ description: "Git best practices, branch management, and commit discipline for e
 
 Git best practices, branch management strategies, and commit discipline for effective version control.
 
-## Tier 1: Guided Git Workflow (Session 15+)
+## Tier 1: Guided Git Workflow
 
 ### What This Skill Does
 
@@ -210,7 +210,7 @@ git show v1.0.0
 
 ---
 
-## Tier 2: Confident Git Workflow (Session 16+)
+## Tier 2: Confident Git Workflow
 
 ### Advanced Git Techniques
 
@@ -305,7 +305,7 @@ git bisect reset
 
 ---
 
-## Tier 3: Anticipatory Git Workflow (Session 17+)
+## Tier 3: Anticipatory Git Workflow
 
 ### Proactive Git Strategies
 

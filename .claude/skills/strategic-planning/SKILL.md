@@ -10,7 +10,7 @@ Develop and execute strategic plans that align team efforts with organizational 
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 21+)
+### 🎯 Tier 1: Foundation
 **Strategic Planning Fundamentals**
 
 Create basic strategic plans for the team:
@@ -35,7 +35,7 @@ Create basic strategic plans for the team:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 21+)
+### 🚀 Tier 2: Advanced
 **Comprehensive Strategy Development**
 
 Develop comprehensive strategic plans and execution frameworks:
@@ -64,7 +64,7 @@ Develop comprehensive strategic plans and execution frameworks:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 21+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Leadership & Organizational Impact**
 
 Drive organizational strategy and long-term vision:

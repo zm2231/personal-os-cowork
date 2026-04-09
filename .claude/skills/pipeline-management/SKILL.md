@@ -9,7 +9,7 @@ Track, manage, and optimize sales opportunities through the full sales funnel fr
 
 ## Progressive Disclosure Tiers
 
-### Level 1: Foundation (Available Session 24+)
+### Level 1: Foundation
 
 #### Core Capabilities
 - **Pipeline Visibility**: Track all opportunities in CRM with stages, values, and next steps
@@ -51,7 +51,7 @@ Track, manage, and optimize sales opportunities through the full sales funnel fr
 
 ---
 
-### Level 2: Advanced (Available Session 24+)
+### Level 2: Advanced
 
 #### Core Capabilities
 - **Pipeline Velocity Analysis**: Track time in each stage, identify bottlenecks, optimize sales cycle length
@@ -92,7 +92,7 @@ Track, manage, and optimize sales opportunities through the full sales funnel fr
 
 ---
 
-### Level 3: Strategic (Available Session 24+)
+### Level 3: Strategic
 
 #### Core Capabilities
 - **Pipeline Predictive Modeling**: Use ML to predict close probability, identify deals needing intervention
@@ -141,10 +141,6 @@ This skill integrates with:
 - **Account Management**: Closed deals transition to account management for upselling
 - **Forecasting**: Pipeline data feeds into revenue forecasting
 - **Sales Enablement**: Use enablement content at each pipeline stage
-
-## Session Unlock Requirements
-
-This skill requires Session 24+.
 
 ## Examples
 

@@ -9,7 +9,7 @@ Predict revenue, bookings, and pipeline outcomes through data-driven forecasting
 
 ## Progressive Disclosure Tiers
 
-### Level 1: Foundation (Available Session 24+)
+### Level 1: Foundation
 
 #### Core Capabilities
 - **Opportunity Forecasting**: Forecast individual deal close dates and probabilities based on stage and engagement
@@ -52,7 +52,7 @@ Predict revenue, bookings, and pipeline outcomes through data-driven forecasting
 
 ---
 
-### Level 2: Advanced (Available Session 24+)
+### Level 2: Advanced
 
 #### Core Capabilities
 - **Predictive Forecasting**: Use historical data to predict future performance, identify trends and patterns
@@ -95,7 +95,7 @@ Predict revenue, bookings, and pipeline outcomes through data-driven forecasting
 
 ---
 
-### Level 3: Strategic (Available Session 24+)
+### Level 3: Strategic
 
 #### Core Capabilities
 - **Revenue Operations Integration**: Align forecasting with marketing attribution and customer success metrics
@@ -145,10 +145,6 @@ This skill integrates with:
 - **Deal Closing**: Deal close probabilities and dates update forecasts
 - **Account Management**: Renewal and expansion forecasts from account management
 - **Lead Generation**: Lead pipeline forecasts bookings
-
-## Session Unlock Requirements
-
-This skill requires Session 24+.
 
 ## Examples
 

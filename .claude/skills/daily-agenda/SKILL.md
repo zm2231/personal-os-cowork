@@ -41,8 +41,6 @@ The Daily Agenda skill helps you:
 
 ## Tier 1: Guided Agenda Planning
 
-**Unlock:** Session 1
-
 ### Capabilities
 
 **Basic Daily Planning:**
@@ -205,8 +203,6 @@ Carryover to tomorrow:
 
 ## Tier 2: Advanced Optimization
 
-**Unlock:** Session 5
-
 ### Additional Capabilities
 
 **Energy-Based Planning:**
@@ -365,8 +361,6 @@ Recommendations:
 - Fix: Always record actual time vs estimated, analyze weekly
 
 ## Tier 3: Anticipatory Auto-Planning
-
-**Unlock:** Session 10
 
 ### Expert Capabilities
 

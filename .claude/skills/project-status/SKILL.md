@@ -29,8 +29,6 @@ Track project progress, metrics, milestones, and generate comprehensive status r
 
 ## Tier 1: Guided Tracking (Beginner)
 
-**Session Unlock:** Session 14+
-
 ### Project Overview
 
 #### Create Project
@@ -109,8 +107,6 @@ Update project progress:
 ---
 
 ## Tier 2: Confident Reporting (Intermediate)
-
-**Session Unlock:** Session 16+
 
 ### Structured Status Reports
 
@@ -382,8 +378,6 @@ def calculate_team_capacity(team):
 ---
 
 ## Tier 3: Anticipatory Insights (Advanced)
-
-**Session Unlock:** Session 20+
 
 ### Predictive Analytics
 

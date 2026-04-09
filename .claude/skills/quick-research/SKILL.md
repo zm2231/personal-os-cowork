@@ -42,8 +42,6 @@ The Quick Research skill helps you:
 
 ## Tier 1: Efficient Research & Synthesis
 
-**Unlock:** Session 4
-
 ### Capabilities
 
 **Basic Research:**
@@ -327,8 +325,6 @@ Research Quality:
 - Fix: Focus on key findings and actionable insights
 
 ## Tier 2: Deep Analysis & Verification
-
-**Unlock:** Session 9
 
 ### Additional Capabilities
 
@@ -690,8 +686,6 @@ Research Quality:
 - Fix: Note what information is missing and plan follow-up research
 
 ## Tier 3: Synthesis & Predictive Analysis
-
-**Unlock:** Session 14
 
 ### Expert Capabilities
 

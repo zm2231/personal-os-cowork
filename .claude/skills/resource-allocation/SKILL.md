@@ -10,7 +10,7 @@ Strategically allocate and optimize team resources across projects, initiatives,
 
 ## Capabilities
 
-### 🎯 Tier 1: Foundation (Session 21+)
+### 🎯 Tier 1: Foundation
 **Basic Resource Planning & Assignment**
 
 Plan and assign resources to projects effectively:
@@ -34,7 +34,7 @@ Plan and assign resources to projects effectively:
 
 ---
 
-### 🚀 Tier 2: Advanced (Session 21+)
+### 🚀 Tier 2: Advanced
 **Dynamic Resource Optimization & Forecasting**
 
 Optimize resources dynamically and plan for future needs:
@@ -61,7 +61,7 @@ Optimize resources dynamically and plan for future needs:
 
 ---
 
-### 🌟 Tier 3: Anticipatory (Session 21+)
+### 🌟 Tier 3: Anticipatory
 **Strategic Resource Architecture**
 
 Design resource strategies that scale with organizational growth:

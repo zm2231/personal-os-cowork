@@ -7,7 +7,7 @@ description: "Code performance analysis, bottleneck identification, and optimiza
 
 Systematic code performance analysis, bottleneck identification, and optimization strategies.
 
-## Tier 1: Guided Performance Profiling (Session 15+)
+## Tier 1: Guided Performance Profiling
 
 ### What This Skill Does
 
@@ -91,7 +91,7 @@ node --prof-process isolate-*.log > profile.txt
 
 ---
 
-## Tier 2: Confident Profiling (Session 16+)
+## Tier 2: Confident Profiling
 
 ### Advanced Techniques
 
@@ -161,7 +161,7 @@ users_with_posts = db.query("""
 
 ---
 
-## Tier 3: Anticipatory Profiling (Session 17+)
+## Tier 3: Anticipatory Profiling
 
 ### Proactive Strategies
 

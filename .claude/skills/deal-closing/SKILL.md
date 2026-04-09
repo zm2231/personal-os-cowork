@@ -9,7 +9,7 @@ Negotiate, close, and finalize deals through strategic negotiation, objection ha
 
 ## Progressive Disclosure Tiers
 
-### Level 1: Foundation (Available Session 24+)
+### Level 1: Foundation
 
 #### Core Capabilities
 - **Value Demonstration**: Present compelling ROI case studies, quantify business impact, align solution with strategic objectives
@@ -51,7 +51,7 @@ Negotiate, close, and finalize deals through strategic negotiation, objection ha
 
 ---
 
-### Level 2: Advanced (Available Session 24+)
+### Level 2: Advanced
 
 #### Core Capabilities
 - **Strategic Negotiation**: Use principled negotiation (interest-based rather than positional), create win-win outcomes, expand the pie
@@ -92,7 +92,7 @@ Negotiate, close, and finalize deals through strategic negotiation, objection ha
 
 ---
 
-### Level 3: Strategic (Available Session 24+)
+### Level 3: Strategic
 
 #### Core Capabilities
 - **Deal Architecture**: Design complex deal structures (tiered pricing, revenue sharing, partnerships), optimize for long-term value
@@ -140,10 +140,6 @@ This skill integrates with:
 - **Account Management**: Closed deals transition to account management
 - **Sales Enablement**: Use enablement content in presentations and negotiations
 - **Forecasting**: Deal close probabilities feed into revenue forecasting
-
-## Session Unlock Requirements
-
-This skill requires Session 24+.
 
 ## Examples
 

@@ -6,7 +6,7 @@ A personal AI system for Claude Code / Cowork that learns how you work and adapt
 
 ## How It Works
 
-Clone the repo into your Cowork session. Claude reads `CLAUDE.md` on startup, discovers all 88 skills in `.claude/skills/`, and runs onboarding if you're new. Your personal context lives in `personal-os/` and persists across sessions.
+Clone the repo into your Cowork session. Claude reads `CLAUDE.md` on startup, discovers all 83 skills in `.claude/skills/`, and runs onboarding if you're new. Your personal context lives in `personal-os/` and persists across sessions.
 
 ```bash
 git clone https://github.com/zm2231/personal-os-cowork.git
@@ -44,7 +44,7 @@ personal-os-cowork/
 │   ├── settings.json                # Stop hook — forces session notes before exit
 │   ├── hooks/
 │   │   └── session-notes-check.sh  # Blocks Claude from stopping without writing notes
-│   └── skills/                      # 87 native skills — auto-discovered, /slash-invokable
+│   └── skills/                      # 83 native skills — auto-discovered, /slash-invokable
 │       ├── onboarding-interview/
 │       ├── system-check/
 │       ├── role-detection/
@@ -84,7 +84,7 @@ personal-os-cowork/
 
 ## Skills
 
-All 88 skills live in `.claude/skills/<name>/SKILL.md` and are auto-discovered by Claude Code. Invoke any skill with `/skill-name` or describe what you need and Claude routes to the right one.
+All 83 skills live in `.claude/skills/<name>/SKILL.md` and are auto-discovered by Claude Code. Invoke any skill with `/skill-name` or describe what you need and Claude routes to the right one.
 
 ### Core (always relevant)
 `/onboarding-interview` `/system-check` `/role-detection` `/session-summary` `/skill-creator` `/scheduled-jobs`

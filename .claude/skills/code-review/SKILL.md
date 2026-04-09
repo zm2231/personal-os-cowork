@@ -29,8 +29,6 @@ Perform comprehensive code reviews with quality checks, best practices validatio
 
 ## Tier 1: Guided Review (Beginner)
 
-**Session Unlock:** Session 14+
-
 ### Review Checklist
 
 Follow this structured review process:
@@ -102,8 +100,6 @@ Follow this structured review process:
 
 ## Tier 2: Confident Review (Intermediate)
 
-**Session Unlock:** Session 16+
-
 ### Advanced Review Techniques
 
 #### Deep Analysis Patterns
@@ -161,8 +157,6 @@ def analyze_code_metrics(file_path):
 ---
 
 ## Tier 3: Anticipatory Review (Advanced)
-
-**Session Unlock:** Session 20+
 
 ### Proactive Review Patterns
 
