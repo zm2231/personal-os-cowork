@@ -154,8 +154,8 @@ where do you want it?
 
 Options:
 - In-conversation (default, always works)
-- Telegram (if you have a bot set up)
-- Notion page
+- Notion (built-in — just tell me which page or database to write to)
+- Telegram (push notifications to your phone — I'll help you set it up)
 - A specific file in this folder
 - Multiple destinations depending on urgency
 
@@ -173,9 +173,23 @@ Then update `personal-os/context/output-format.md` with the configured destinati
 - Fill in the Notion parent page ID/title (if Notion is a destination)
 - Leave other sections as-is (they're format specs, not config)
 
-If they have Telegram: "What's your bot token and chat ID? I'll save it to `notifications.md` — that file is gitignored so it stays local and never gets committed."
+If they choose Notion: "What's the name of the page or database where you want outputs to land? I'll use that as the parent so nothing gets created at the top level." (No additional setup needed — Notion is built in.)
 
-If they have Notion: "What's the name of the page or database where you want outputs to land? I'll use that as the parent so nothing gets created at the top level."
+If they choose Telegram:
+```
+"To set up Telegram push notifications:
+
+1. Open Telegram → search for @BotFather → start a chat
+2. Send: /newbot
+3. Follow the prompts (give it a name and username)
+4. BotFather gives you a bot token — save it
+5. Open your new bot and send it any message
+6. Visit: https://api.telegram.org/bot[YOUR_TOKEN]/getUpdates
+7. Find your chat_id in the response
+
+Then share the token and chat ID here and I'll save them to notifications.md
+(that file is gitignored — it stays local and never gets committed)."
+```
 
 If they have Obsidian mounted: Ask the vault check questions (see Local Vault section below) now rather than waiting.
 
@@ -352,7 +366,7 @@ Build `personal-os/context/snapshot.md` from all answers:
 Next:
 - "What should I focus on today?" → /daily-agenda
 - "We decided to..." → logs to decisions.md
-- /check → verify setup
+- /system-check → verify setup
 - /session-summary → wrap up sessions
 ```
 

@@ -101,29 +101,31 @@ Place outputs in the configured output folder. If the user has a preferred inbox
 
 ---
 
-## Notion (if Notion MCP is connected)
+## Notion (built-in — no setup required)
+
+Notion integration is native to Cowork. No MCP configuration needed — Claude can read and write to Notion out of the box.
 
 **Workspace:** [workspace name] [confirmed]
 **Primary parent page:** [page title or ID where outputs land]
 **Daily Huddle DB:** [database ID if applicable]
 
-### How to Write (MCP tools)
+### How to Write
 
 **Append to existing page:**
 ```
-mcp__notion__notion_from_title → get page ID by title
-mcp__notion__notion_append_markdown → append content
+notion_from_title → get page ID by title
+notion_append_markdown → append content
 ```
 
 **Create new page:**
 ```
-mcp__notion__notion_create_page → parent_id = configured parent page
+notion_create_page → parent_id = configured parent page
 ```
 
 **Find a database:**
 ```
-mcp__notion__notion_list_databases → find by name
-mcp__notion__notion_create_database_item → add row
+notion_list_databases → find by name
+notion_create_database_item → add row
 ```
 
 ### Page Structure

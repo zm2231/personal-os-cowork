@@ -86,4 +86,4 @@ Assign tasks from your phone via Cowork Dispatch (Desktop app → Dispatch tab).
 
 ## Plugin Integration
 
-Skills work with Cowork's built-in tools (browser, file system, terminal). Optional MCPs: Gmail, Calendar, Notion, GitHub. If not configured, fall back: "Connect Gmail MCP for email features."
+Skills work with Cowork's built-in tools (browser, file system, terminal, Notion). Optional MCPs: Gmail, Calendar, GitHub. Notion is built-in — no MCP setup needed. If optional MCPs aren't configured, fall back: "Connect Gmail MCP for email features."

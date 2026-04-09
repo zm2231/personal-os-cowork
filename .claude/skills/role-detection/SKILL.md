@@ -5,7 +5,7 @@ description: "Infers user's role from onboarding answers and recommends specific
 
 # Role Detection
 
-Reads `personal-os/context/identity.md` and recommends the most useful skills to start with based on role. All 87 skills are already available — this just surfaces the highest-signal ones.
+Reads `personal-os/context/identity.md` and recommends the most useful skills to start with based on role. All 88 skills are already available — this just surfaces the highest-signal ones.
 
 ---
 
@@ -49,7 +49,7 @@ Skills to try first:
 - /skill-name — [one line]
 (3–5 skills, not all of them)
 
-All 87 skills are available — use /skill-suggester to browse or just
+All 88 skills are available — use /skill-suggester to browse or just
 describe what you need and I'll find the right one.
 
 [If technical signals detected:]
